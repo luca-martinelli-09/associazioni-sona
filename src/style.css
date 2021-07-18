@@ -13,6 +13,23 @@ a {
     @apply text-link underline;
 }
 
+a.goto {
+    @apply no-underline text-2xl font-semibold;
+}
+
+a.goto span {
+    @apply underline;
+}
+
+a.goto:after {
+    content: "➜";
+    margin-left: 10px;
+}
+
+p {
+    @apply text-justify;
+}
+
 h1 {
     @apply font-serif text-5xl;
     margin-top: 60px;
@@ -78,4 +95,67 @@ span.line {
 
 span.line:first-child {
     margin-bottom: 8px;
+}
+
+.events-container {
+    @apply grid grid-cols-1 xl:grid-cols-2 gap-10;
+    margin-bottom: 40px;
+}
+
+.card {
+    @apply border border-black overflow-hidden;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0px #ffc996;
+}
+
+.card.event {
+    @apply bg-white flex flex-col md:flex-row;
+}
+
+.event .card-image {
+    @apply flex border-b md:border-r md:border-b-0 border-black;
+    flex: 2;
+}
+
+.event .card-image img {
+    @apply object-cover object-top;
+}
+
+.event .card-content {
+    flex: 3;
+    padding: 30px;
+}
+
+.event h2 {
+    margin-bottom: 20px;
+}
+
+.event-information {
+    @apply grid grid-flow-row gap-3;
+    margin: 20px 0px;
+}
+
+.event-information span {
+    @apply flex items-center;
+}
+
+.event-information span:before {
+    content: "";
+    margin-right: 5px;
+}
+
+.event-information span.location:before {
+    content: "📍";
+    margin: 0px 9px 0px 5px;
+}
+
+.event-information span.datetime:before {
+    content: "🕑";
+}
+
+button, .button {
+    @apply inline-block no-underline text-black font-semibold bg-white border border-black cursor-pointer text-base;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px #00ead3;
+    padding: 7px 15px;
 }
