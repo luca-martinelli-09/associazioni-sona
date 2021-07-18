@@ -1,0 +1,25 @@
+{
+  "name": "associazioni-sona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luca-martinelli-09/associazioni-sona.git"
+  },
+  "author": "Luca Martinelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luca-martinelli-09/associazioni-sona/issues"
+  },
+  "homepage": "https://github.com/luca-martinelli-09/associazioni-sona#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}

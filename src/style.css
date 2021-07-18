@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans bg-background text-black text-lg;
+}
+
+a {
+    @apply text-link underline;
+}
+
+h1 {
+    @apply font-serif text-5xl;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    @apply font-serif text-3xl;
+}
+
+h6 {
+    @apply font-bold text-xl;
+}
+
+.subtext {
+    @apply text-lightblack;
+}
+
+header {
+    @apply bg-white border-b border-black flex justify-center;
+    padding: 20px;
+}
+
+footer {
+    @apply bg-white border-t border-b border-black flex justify-center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+main {
+    padding: 0px 20px;
+}
+
+.container {
+    @apply max-w-screen-3xl;
+    margin: 0 auto;
+}
+
+header .container {
+    @apply flex flex-row items-center;
+}
+
+.nav-title {
+    @apply flex-1;
+}
+
+.logo {
+    height: 65px;
+    margin-right: 30px;
+}
+
+.menu-toggle {
+    @apply rounded-full border border-black flex flex-col justify-center items-center cursor-pointer;
+    height: 55px;
+    width: 55px;
+}
+
+span.line {
+    @apply block bg-black;
+    width: 25px;
+    height: 1px;
+}
+
+span.line:first-child {
+    margin-bottom: 8px;
+}
