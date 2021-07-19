@@ -1,3 +1,13 @@
+function getTokens(from) {
+  if (location.href.lastIndexOf(from) >= 0) {
+    return location.href
+      .substr(location.href.lastIndexOf(from) + from.length)
+      .split("/")
+      .filter((token) => token.length > 0);
+  }
+  return null;
+}
+
 $(".menu-toggle").click(function (e) {
   e.preventDefault();
 
