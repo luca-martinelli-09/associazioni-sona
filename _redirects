@@ -1,4 +1,4 @@
-/eventi /eventi.html
-/associazioni/* /associazione.html
-/forum  /forum.html
-/quiz   /quiz.html
+/eventi /eventi.html    200
+/associazioni/* /associazione.html  200
+/forum  /forum.html 200
+/quiz   /quiz.html  200
