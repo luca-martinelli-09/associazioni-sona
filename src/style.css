@@ -100,6 +100,16 @@ input[type="reset"].m-0 {
   margin: 0px;
 }
 
+button.disabled,
+.button.disabled,
+input[type="button"].disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled {
+  @apply bg-gray-200 text-gray-600;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
 button.btn-mini,
 .button.btn-mini,
 input[type="button"].btn-mini,
