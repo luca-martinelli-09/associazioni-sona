@@ -19,7 +19,7 @@ module.exports = {
         mono: ["Cascadia Code", "monospace", "ui-monospace"],
       },
       screens: {
-        '3xl': '1720px',
+        "3xl": "1720px",
       },
     },
   },
@@ -27,4 +27,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

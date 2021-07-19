@@ -6,72 +6,72 @@
 @tailwind utilities;
 
 * {
-    --shadow-color-card: #ffc996;
-    --shadow-color-btn: #00ead3;
+  --shadow-color-card: #ffc996;
+  --shadow-color-btn: #00ead3;
 }
 
 /* GENERAL */
 
 body {
-    @apply font-sans bg-background text-black text-lg;
+  @apply font-sans bg-background text-black text-lg;
 }
 
 a {
-    @apply text-link underline;
+  @apply text-link underline;
 }
 
 a.goto {
-    @apply no-underline text-2xl font-semibold;
+  @apply no-underline text-2xl font-semibold;
 }
 
 a.goto span {
-    @apply underline;
+  @apply underline;
 }
 
 a.goto:after {
-    content: "➜";
-    margin-left: 10px;
+  content: "➜";
+  margin-left: 10px;
 }
 
 p {
-    @apply text-justify;
+  @apply text-justify;
 }
 
 h1 {
-    @apply font-serif text-5xl;
-    margin-top: 60px;
-    margin-bottom: 50px;
+  @apply font-serif text-5xl;
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 h2 {
-    @apply font-serif text-3xl;
+  @apply font-serif text-3xl;
 }
 
 h3 {
-    @apply font-serif text-2xl;
+  @apply font-serif text-2xl;
 }
 
 h6 {
-    @apply font-bold text-xl;
+  @apply font-bold text-xl;
 }
 
 .subtext {
-    @apply text-lightblack;
+  @apply text-lightblack;
 }
 
 footer {
-    @apply bg-white border-t border-b border-black flex justify-center;
-    padding: 30px 20px;
-    margin-top: 60px;
+  @apply bg-white border-t border-b border-black flex justify-center;
+  padding: 30px 20px;
+  margin-top: 60px;
 }
 
 main {
-    padding: 0px 20px;
+  padding: 0px 20px;
 }
 
 .container {
-    @apply max-w-screen-3xl;
-    margin: 0 auto;
+  @apply max-w-screen-3xl;
+  margin: 0 auto;
 }
 
 button,
@@ -79,12 +79,12 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-    @apply inline-block no-underline text-black font-semibold bg-white border border-black cursor-pointer text-base;
-    border-radius: 3px;
-    box-shadow: 3px 3px 0px var(--shadow-color-btn);
-    padding: 7px 15px;
-    transition: 200ms ease box-shadow, 200ms ease transform, 300ms ease filter;
-    margin-top: 20px;
+  @apply inline-block no-underline text-black font-semibold bg-white border border-black cursor-pointer text-base;
+  border-radius: 3px;
+  box-shadow: 3px 3px 0px var(--shadow-color-btn);
+  padding: 7px 15px;
+  transition: 200ms ease box-shadow, 200ms ease transform, 300ms ease filter;
+  margin-top: 20px;
 }
 
 button.m-0,
@@ -92,7 +92,7 @@ button.m-0,
 input[type="button"].m-0,
 input[type="submit"].m-0,
 input[type="reset"].m-0 {
-    margin: 0px;
+  margin: 0px;
 }
 
 button.btn-mini,
@@ -100,8 +100,8 @@ button.btn-mini,
 input[type="button"].btn-mini,
 input[type="submit"].btn-mini,
 input[type="reset"].btn-mini {
-    @apply text-sm;
-    padding: 5px 13px;
+  @apply text-sm;
+  padding: 5px 13px;
 }
 
 button:hover,
@@ -109,8 +109,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    box-shadow: 4px 4px 0px var(--shadow-color-btn);
-    transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--shadow-color-btn);
+  transform: translate(-1px, -1px);
 }
 
 button:active,
@@ -118,146 +118,183 @@ button:active,
 input[type="button"]:active,
 input[type="submit"]:active,
 input[type="reset"]:active {
-    box-shadow: 2px 2px 0px var(--shadow-color-btn);
-    transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0px var(--shadow-color-btn);
+  transform: translate(1px, 1px);
 }
 
 .card {
-    @apply border border-black overflow-hidden no-underline text-black;
-    border-radius: 4px;
-    box-shadow: 10px 10px 0px var(--shadow-color-card);
+  @apply border border-black overflow-hidden no-underline text-black;
+  border-radius: 4px;
+  box-shadow: 10px 10px 0px var(--shadow-color-card);
 }
 
 .tags-container {
-    font-size: 0px;
-    margin-bottom: 5px;
+  font-size: 0px;
+  margin-bottom: 5px;
 }
 
 .tag {
-    @apply rounded-full border border-black bg-white text-xs;
-    padding: 1px 8px;
-    margin: 0px 3px 3px 0px;
+  @apply rounded-full border border-black bg-white text-xs;
+  padding: 1px 8px;
+  margin: 0px 3px 3px 0px;
 }
 
 /* HEADER */
 
 header {
-    @apply bg-white border-b border-black flex justify-center;
-    padding: 20px;
+  @apply bg-white border-b border-black flex justify-center;
+  padding: 20px;
 }
 
 header .container {
-    @apply flex flex-row items-center;
+  @apply flex flex-row items-center;
 }
 
 .nav-title {
-    @apply flex-1;
+  @apply flex-1;
 }
 
 .logo {
-    height: 65px;
-    margin-right: 30px;
+  height: 65px;
+  margin-right: 30px;
 }
 
 .menu-toggle {
-    @apply rounded-full border border-black flex flex-col justify-center items-center cursor-pointer;
-    height: 55px;
-    width: 55px;
+  @apply rounded-full bg-white border border-black flex flex-col justify-center items-center cursor-pointer;
+  height: 55px;
+  width: 55px;
 }
 
 span.line {
-    @apply block bg-black;
-    width: 25px;
-    height: 1px;
+  @apply block bg-black;
+  width: 25px;
+  height: 1px;
+  transition: 200ms ease transform;
 }
 
 span.line:first-child {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+/* MENU */
+
+.menu-opened span.line:first-child {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.menu-opened span.line:last-child {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+nav {
+  @apply fixed inset-0 bg-white overflow-auto;
+  padding: 105px 0px 30px 0px;
+  transition: 200ms ease transform;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+nav.menu-opened {
+  transform: scaleY(1);
+}
+
+nav li a {
+  @apply block no-underline text-black text-5xl font-serif py-5 px-20 border-t border-black;
+  transition: 300ms ease background, 300ms ease padding-left;
+}
+
+nav li:last-child a {
+  @apply border-b;
+}
+
+nav li a:hover {
+  @apply pl-24;
+  background-color: var(--shadow-color-card);
 }
 
 /* EVENTI */
 
 .events-container {
-    @apply grid grid-cols-1 xl:grid-cols-2 gap-10;
-    margin-bottom: 40px;
+  @apply grid grid-cols-1 xl:grid-cols-2 gap-10;
+  margin-bottom: 40px;
 }
 
 .card.event {
-    @apply bg-white flex flex-col md:flex-row;
+  @apply bg-white flex flex-col md:flex-row;
 }
 
 .event .card-image {
-    @apply flex border-b md:border-r md:border-b-0 border-black;
-    flex: 2;
+  @apply flex border-b md:border-r md:border-b-0 border-black;
+  flex: 2;
 }
 
 .event .card-image img {
-    @apply object-cover object-top;
+  @apply object-cover object-top;
 }
 
 .event .card-content {
-    flex: 3;
-    padding: 30px;
+  flex: 3;
+  padding: 30px;
 }
 
 .event h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .event-information {
-    @apply grid grid-flow-row gap-3;
-    margin: 20px 0px;
+  @apply grid grid-flow-row gap-3;
+  margin: 20px 0px;
 }
 
 .event-information span {
-    @apply flex items-center;
+  @apply flex items-center;
 }
 
 .event-information span:before {
-    content: "";
-    margin-right: 5px;
+  content: "";
+  margin-right: 5px;
 }
 
 .event-information span.location:before {
-    content: "📍";
-    margin: 0px 9px 0px 5px;
+  content: "📍";
+  margin: 0px 9px 0px 5px;
 }
 
 .event-information span.datetime:before {
-    content: "🕑";
+  content: "🕑";
 }
 
 /* ASSOCIAZIONI */
 
 .associazioni-container {
-    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10;
-    margin-bottom: 40px;
+  @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10;
+  margin-bottom: 40px;
 }
 
 .card.associazione {
-    @apply bg-white flex flex-col filter grayscale;
-    background-image: linear-gradient(135deg, var(--s-color) 0%, var(--e-color) 100%);
-    transition: 300ms ease filter;
+  @apply bg-white flex flex-col filter grayscale;
+  background-image: linear-gradient(135deg, var(--s-color) 0%, var(--e-color) 100%);
+  transition: 300ms ease filter, 300ms ease box-shadow, 300ms ease transform;
 }
 
 .card.associazione:hover {
-    @apply grayscale-0;
+  @apply grayscale-0;
 }
 
 .associazione .card-image {
-    @apply flex;
-    padding: 30px 60px 0px 60px;
-    transition: 300ms ease filter, 300ms ease transform;
+  @apply flex;
+  padding: 30px 60px 0px 60px;
+  transition: 300ms ease filter, 300ms ease transform;
 }
 
 .associazione:hover .card-image {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .associazione .card-image img {
-    @apply object-contain object-center;
+  @apply object-contain object-center;
 }
 
 .associazione .card-content {
-    padding: 30px;
+  padding: 30px;
 }

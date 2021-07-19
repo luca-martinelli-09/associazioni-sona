@@ -18,13 +18,20 @@
                 <h6>Comune di Sona</h6>
                 <span class="subtext">Associazioni</span>
             </div>
-            <a class="menu-toggle" data-ref="nav">
+            <a class="menu-toggle z-50" data-ref="nav">
                 <span class="line"></span>
                 <span class="line"></span>
             </a>
         </div>
     </header>
-    <nav></nav>
+    <nav>
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./eventi">Eventi</a></li>
+            <li><a href="./associazioni">Associazioni</a></li>
+            <li><a href="./quiz">Che associazione sono?</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div class="container">
@@ -52,17 +59,15 @@
             <section>
                 <h1>Associazioni</h1>
                 <div class="associazioni-container" id="associazioni">
-                    <a class="card associazione" href="#" style="--s-color: rgb(255 244 244);--e-color: rgb(255 223 225);">
+                    <a class="card associazione" href="#" style="--s-color: rgb(255 241 241);--e-color: rgb(255 228 228);">
                         <div class="card-image">
-                            <img src="./res/logo.png" alt="Comune di Sona" />
+                            <img src="https://www.bandadisona.it/style/res/logo.svg" alt="Corpo Bandistico di Sona" />
                         </div>
                         <div class="card-content">
                             <div class="tags-container">
                                 <span class="tag">Musica</span>
-                                <span class="tag">Musica</span>
-                                <span class="tag">Musica</span>
                             </div>
-                            <h3>Comune di Sona</h3>
+                            <h3>Corpo Bandistico di Sona</h3>
                             <button class="btn-mini">Più informazioni</button>
                         </div>
                     </a>
@@ -77,6 +82,10 @@
                 Martinelli</a>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
