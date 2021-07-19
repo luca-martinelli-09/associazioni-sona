@@ -1,6 +1,86 @@
-<script>
-    function getTokens(from) {
-        return location.href.substr(location.href.indexOf(from) + from.length).split("/").filter(token => token.length > 0);
-    }
-    document.write(getTokens("/associazioni/")[0]);
-</script>
+<!DOCTYPE html>
+<html lang="it">
+
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comune di Sona | Associazioni</title>
+
+    <link rel="icon" href="./res/logo.png" type="image/png">
+
+    <meta name="author" content="Luca Martinelli">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+        content="Il portale ufficiale delle associazioni del Comune di Sona">
+
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="./"><img src="./res/logo.png" class="logo" alt="Comune di Sona" /></a>
+            <div class="nav-title">
+                <h6>Comune di Sona</h6>
+                <span class="subtext">Associazioni</span>
+            </div>
+            <a class="menu-toggle z-50" data-ref="nav">
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./eventi">Eventi</a></li>
+            <li><a href="./#associazioni">Associazioni</a></li>
+            <li><a href="./forum">Forum delle associazioni</a></li>
+            <!--<li><a href="./quiz">Che associazione sono?</a></li>-->
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section>
+                <h1>Corpo Bandistico di Sona</h1>
+                <div class="associazioni-container" id="associazioni">
+                    <a class="card associazione" href="#"
+                        style="--s-color: rgb(255 241 241);--e-color: rgb(255 228 228);">
+                        <div class="card-image">
+                            <img src="https://www.bandadisona.it/style/res/logo.svg" alt="Corpo Bandistico di Sona" />
+                        </div>
+                        <div class="card-content">
+                            <div class="tags-container">
+                                <span class="tag">Musica</span>
+                            </div>
+                            <h3>Corpo Bandistico di Sona</h3>
+                            <button class="btn-mini">Più informazioni</button>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            Realizzato da <a href="https://lucamartinelli.hopto.org/" target="_blank" rel="noopener noreferrer">Luca
+                Martinelli</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+
+    <script>
+        function getTokens(from) {
+            return location.href.substr(location.href.indexOf(from) + from.length).split("/").filter(token => token.length > 0);
+        }
+        document.write(getTokens("/associazioni/")[0]);
+    </script>
+</body>
+
+</html>
