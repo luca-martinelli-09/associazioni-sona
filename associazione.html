@@ -1,4 +1,6 @@
 <script>
-    tokens = location.href.split("/");
-    document.append(tokens[2]);
+    function getTokens(from) {
+        return location.href.substr(location.href.indexOf(from) + from.length).split("/").filter(token => token.length > 0);
+    }
+    document.append(getTokens("associazioni")[0]);
 </script>
