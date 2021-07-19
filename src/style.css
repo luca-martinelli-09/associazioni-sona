@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    --shadow-color-card: #ffc996;
+    --shadow-color-btn: #00ead3;
+}
+
+/* GENERAL */
 
 body {
     @apply font-sans bg-background text-black text-lg;
@@ -40,17 +47,16 @@ h2 {
     @apply font-serif text-3xl;
 }
 
+h3 {
+    @apply font-serif text-2xl;
+}
+
 h6 {
     @apply font-bold text-xl;
 }
 
 .subtext {
     @apply text-lightblack;
-}
-
-header {
-    @apply bg-white border-b border-black flex justify-center;
-    padding: 20px;
 }
 
 footer {
@@ -66,6 +72,78 @@ main {
 .container {
     @apply max-w-screen-3xl;
     margin: 0 auto;
+}
+
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    @apply inline-block no-underline text-black font-semibold bg-white border border-black cursor-pointer text-base;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px var(--shadow-color-btn);
+    padding: 7px 15px;
+    transition: 200ms ease box-shadow, 200ms ease transform, 300ms ease filter;
+    margin-top: 20px;
+}
+
+button.m-0,
+.button.m-0,
+input[type="button"].m-0,
+input[type="submit"].m-0,
+input[type="reset"].m-0 {
+    margin: 0px;
+}
+
+button.btn-mini,
+.button.btn-mini,
+input[type="button"].btn-mini,
+input[type="submit"].btn-mini,
+input[type="reset"].btn-mini {
+    @apply text-sm;
+    padding: 5px 13px;
+}
+
+button:hover,
+.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    box-shadow: 4px 4px 0px var(--shadow-color-btn);
+    transform: translate(-1px, -1px);
+}
+
+button:active,
+.button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+    box-shadow: 2px 2px 0px var(--shadow-color-btn);
+    transform: translate(1px, 1px);
+}
+
+.card {
+    @apply border border-black overflow-hidden no-underline text-black;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0px var(--shadow-color-card);
+}
+
+.tags-container {
+    font-size: 0px;
+    margin-bottom: 5px;
+}
+
+.tag {
+    @apply rounded-full border border-black bg-white text-xs;
+    padding: 1px 8px;
+    margin: 0px 3px 3px 0px;
+}
+
+/* HEADER */
+
+header {
+    @apply bg-white border-b border-black flex justify-center;
+    padding: 20px;
 }
 
 header .container {
@@ -97,15 +175,11 @@ span.line:first-child {
     margin-bottom: 8px;
 }
 
+/* EVENTI */
+
 .events-container {
     @apply grid grid-cols-1 xl:grid-cols-2 gap-10;
     margin-bottom: 40px;
-}
-
-.card {
-    @apply border border-black overflow-hidden;
-    border-radius: 4px;
-    box-shadow: 10px 10px 0px #ffc996;
 }
 
 .card.event {
@@ -153,9 +227,37 @@ span.line:first-child {
     content: "🕑";
 }
 
-button, .button {
-    @apply inline-block no-underline text-black font-semibold bg-white border border-black cursor-pointer text-base;
-    border-radius: 3px;
-    box-shadow: 3px 3px 0px #00ead3;
-    padding: 7px 15px;
+/* ASSOCIAZIONI */
+
+.associazioni-container {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10;
+    margin-bottom: 40px;
+}
+
+.card.associazione {
+    @apply bg-white flex flex-col filter grayscale;
+    background-image: linear-gradient(135deg, var(--s-color) 0%, var(--e-color) 100%);
+    transition: 300ms ease filter;
+}
+
+.card.associazione:hover {
+    @apply grayscale-0;
+}
+
+.associazione .card-image {
+    @apply flex;
+    padding: 30px 60px 0px 60px;
+    transition: 300ms ease filter, 300ms ease transform;
+}
+
+.associazione:hover .card-image {
+    transform: scale(1.02);
+}
+
+.associazione .card-image img {
+    @apply object-contain object-center;
+}
+
+.associazione .card-content {
+    padding: 30px;
 }
