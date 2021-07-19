@@ -105,7 +105,7 @@ button.disabled,
 input[type="button"].disabled,
 input[type="submit"].disabled,
 input[type="reset"].disabled {
-  @apply bg-gray-100 text-gray-500;
+  @apply bg-gray-50 text-gray-500;
   box-shadow: none !important;
   transform: none !important;
 }
