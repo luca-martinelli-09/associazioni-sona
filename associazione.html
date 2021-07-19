@@ -2,5 +2,5 @@
     function getTokens(from) {
         return location.href.substr(location.href.indexOf(from) + from.length).split("/").filter(token => token.length > 0);
     }
-    document.write(getTokens("associazioni")[0]);
+    document.write(getTokens("/associazioni/")[0]);
 </script>
