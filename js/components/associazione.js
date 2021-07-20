@@ -43,17 +43,19 @@ function createAssociazioneFullCard(associazione) {
   var assContacts = "";
   var assActions = "";
 
-  associazione.contacts.forEach((contact) => {
-    const contactType = contact.type;
-    const contactGenerator = contactType != "social" ? contactTypes[contactType] : contactTypes.social[contact.platform];
-    const contactInfo = mapJsonElement(contactGenerator, contact);
+  if (associazione.contacts != null && associazione.contacts.length > 0) {
+    associazione.contacts.forEach((contact) => {
+      const contactType = contact.type;
+      const contactGenerator = contactType != "social" ? contactTypes[contactType] : contactTypes.social[contact.platform];
+      const contactInfo = mapJsonElement(contactGenerator, contact);
 
-    assContacts += generateContactSpan(contactInfo);
-    assActions += contactInfo.action ? generateContactAction(contactInfo) : "";
-  });
+      assContacts += generateContactSpan(contactInfo);
+      assActions += contactInfo.action ? generateContactAction(contactInfo) : "";
+    });
+  }
 
   var assAttachments = "";
-  if(associazione.attachments != null && associazione.attachments.length > 0) {
+  if (associazione.attachments != null && associazione.attachments.length > 0) {
     assAttachments += `<h3 class="mt-6">Allegati</h3>
                         <div class="list-information">`;
     associazione.attachments.forEach((attachment) => {
