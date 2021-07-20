@@ -1,0 +1,172 @@
+{
+    "tags": {
+        "musica": {
+            "name": "Musica"
+        }
+    },
+    "contactTypes": {
+        "place": {
+            "name": "Sede",
+            "actionText": "Email",
+            "generatorLink": false,
+            "icon": "📍",
+            "text": "$address$",
+            "subtext": "$info$"
+        },
+        "website": {
+            "name": "Sito web",
+            "actionText": "Sito web",
+            "generatorLink": "$url$",
+            "icon": "📍",
+            "text": "$url$",
+            "subtext": ""
+        },
+        "email": {
+            "name": "Info",
+            "actionText": "Email",
+            "generatorLink": "mailto:$address$",
+            "icon": "📍",
+            "text": "$address$ ($name$)",
+            "subtext": "$info$"
+        },
+        "phone": {
+            "name": "Principale",
+            "actionText": "Chiama",
+            "generatorLink": "tel:$number$",
+            "icon": "📍",
+            "text": "$number$ ($name$)",
+            "subtext": "$info$"
+        },
+        "social": {
+            "platform": {
+                "instagram": {
+                    "name": "Instagram",
+                    "actionText": "Instagram",
+                    "generatorLink": "https://www.instagram.com/$profile$",
+                    "icon": "📍",
+                    "text": "@$profile$",
+                    "subtext": ""
+                },
+                "facebook": {
+                    "name": "Facebook",
+                    "actionText": "Facebook",
+                    "generatorLink": "https://www.facebook.com/$profile$",
+                    "icon": "📍",
+                    "text": "@$profile$",
+                    "subtext": ""
+                },
+                "youtube": {
+                    "name": "YouTube",
+                    "actionText": "YouTube",
+                    "generatorLink": "https://www.youtube.com/channel/$channel$",
+                    "icon": "📍",
+                    "text": "Vai al canale",
+                    "subtext": ""
+                },
+                "twitter": {
+                    "name": "Twitter",
+                    "actionText": "Twitter",
+                    "generatorLink": "https://twitter.com/$profile$",
+                    "icon": "📍",
+                    "text": "@$profile$",
+                    "subtext": ""
+                },
+                "whatsapp": {
+                    "name": "Whatsapp",
+                    "actionText": "Whatsapp",
+                    "generatorLink": "https://wa.me/$number$",
+                    "icon": "📍",
+                    "text": "$number$",
+                    "subtext": ""
+                },
+                "telegram": {
+                    "name": "Telegram",
+                    "actionText": "Telegram",
+                    "generatorLink": "https://t.me/$profile$",
+                    "icon": "📍",
+                    "text": "@$profile$",
+                    "subtext": ""
+                }
+            }
+        }
+    },
+    "associazioni": {
+        "corpo-bandistico-sona": {
+            "id": "corpo-bandistico-sona",
+            "name": "Corpo Bandistico di Sona",
+            "logoUrl": "https://www.bandadisona.it/style/res/logo.svg",
+            "description": "Il Corpo Bandistico di Sona è un'orchestra a fiati da più di 60 elementi. Nel suo repertorio, propone brani scelti tra generi e tradizioni diverse, ricercando soprattutto musiche che valorizzino tutti gli strumenti ed i timbri della banda.",
+            "tags": [
+                "musica"
+            ],
+            "mainColor": "",
+            "sGradient": "rgb(255 241 241)",
+            "eGradient": "rgb(255 228 228)",
+            "contact": [
+                {
+                    "type": "place",
+                    "address": "Via Roma, 25 - 37060, Sona (VR)"
+                },
+                {
+                    "type": "website",
+                    "url": "https://www.bandadisona.it/",
+                    "action": true
+                },
+                {
+                    "type": "email",
+                    "name": "Segreteria",
+                    "address": "segreteria@bandadisona.it",
+                    "action": true
+                },
+                {
+                    "type": "email",
+                    "name": "Direttivo",
+                    "address": "direttivo@bandadisona.it"
+                },
+                {
+                    "type": "phone",
+                    "name": "Segreteria",
+                    "number": "3451053573",
+                    "info": "Dal lunedì al venerdì dalle 14:00 alle 20:00",
+                    "action": true
+                },
+                {
+                    "type": "phone",
+                    "name": "Presidente",
+                    "number": "3451053399"
+                },
+                {
+                    "type": "phone",
+                    "name": "Vicepresidente",
+                    "number": "3457875120"
+                },
+                {
+                    "type": "phone",
+                    "name": "M. Fabrizio",
+                    "number": "3451053682"
+                },
+                {
+                    "type": "social",
+                    "platform": "instagram",
+                    "profile": "bandadisona",
+                    "action": true
+                },
+                {
+                    "type": "social",
+                    "platform": "facebook",
+                    "profile": "bandadisona"
+                },
+                {
+                    "type": "social",
+                    "platform": "youtube",
+                    "channel": "UC5FwCBtECm5F3xpRvJk0ZvQ"
+                },
+                {
+                    "type": "social",
+                    "platform": "telegram",
+                    "profile": "bandadisona"
+                }
+            ]
+        }
+    }
+}

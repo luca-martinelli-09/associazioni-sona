@@ -137,6 +137,18 @@ input[type="reset"]:active {
   transform: translate(1px, 1px);
 }
 
+.btn-group {
+  @apply flex gap-3;
+}
+
+.btn-group button,
+.btn-group .button,
+.btn-group input[type="button"],
+.btn-group input[type="submit"],
+.btn-group input[type="reset"] {
+  @apply m-0;
+}
+
 .card {
   @apply border border-black overflow-hidden no-underline text-black;
   border-radius: 4px;
@@ -256,26 +268,26 @@ nav li a:hover {
   margin-bottom: 20px;
 }
 
-.event-information {
+.list-information {
   @apply grid grid-flow-row gap-3;
   margin: 20px 0px;
 }
 
-.event-information span {
+.list-information span {
   @apply flex items-center;
 }
 
-.event-information span:before {
+.list-information span:before {
   content: "";
   margin-right: 5px;
 }
 
-.event-information span.location:before {
+.list-information span.location:before {
   content: "📍";
   margin: 0px 9px 0px 5px;
 }
 
-.event-information span.datetime:before {
+.list-information span.datetime:before {
   content: "🕑";
 }
 
@@ -292,6 +304,11 @@ nav li a:hover {
   transition: 300ms ease filter, 300ms ease box-shadow, 300ms ease transform;
 }
 
+.card.associazione-big {
+  @apply bg-white flex flex-col md:flex-row grayscale-0;
+  background-image: none;
+}
+
 .card.associazione:hover {
   @apply grayscale-0;
 }
@@ -302,14 +319,27 @@ nav li a:hover {
   transition: 300ms ease filter, 300ms ease transform;
 }
 
+.associazione-big .card-image {
+  @apply flex border-b md:border-r md:border-b-0 border-black;
+  padding: 30px;
+}
+
 .associazione:hover .card-image {
   transform: scale(1.02);
 }
 
-.associazione .card-image img {
+.associazione .card-image img, .associazione-big .card-image img {
   @apply object-contain object-center;
 }
 
-.associazione .card-content {
+.associazione-big .card-image img {
+  @apply w-full md:w-80;
+}
+
+.associazione .card-content, .associazione-big .card-content {
   padding: 30px;
+}
+
+.associazione-big h2 {
+  margin-bottom: 20px;
 }

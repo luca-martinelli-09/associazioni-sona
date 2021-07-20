@@ -1,3 +1,5 @@
+const baseSito = "./";
+
 function getTokens(from) {
   if (location.href.lastIndexOf(from) >= 0) {
     return location.href
