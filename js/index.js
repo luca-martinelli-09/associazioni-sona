@@ -10,6 +10,24 @@ function getTokens(from) {
   return null;
 }
 
+function mapJsonElement(generator, element) {
+  var generated = { ...element };
+
+  for ([key, val] of Object.entries(generator)) {
+    if (!element.hasOwnProperty(key)) {
+      generated[key] = val != null && val != "" ? val.replace(/\$[a-zA-Z0-9-_]+\$/g, function (match) {
+        const elementKey = match.replace(/\$/g, "");
+        if (generated.hasOwnProperty(elementKey)) {
+          return generated[elementKey];
+        }
+        return "";
+      }) : null;
+    }
+  }
+
+  return generated;
+}
+
 $(".menu-toggle").click(function (e) {
   e.preventDefault();
 

@@ -1,11 +1,18 @@
+var allTags;
+var contactTypes;
+
+var assID = getTokens("/associazioni/")[0];
+
 $.ajax({
   url: baseSito + "associazioni.json",
   type: "GET",
-  data: { id: 1234 },
-  success: function (result) {
-    $("div#risposta").html(result);
-  },
-  error: function (richiesta, stato, errori) {
-    $("div#risposta").html("Chiamata fallita:" + stato + " " + errori);
+  success: function (data) {
+    allTags = data.tags;
+    contactTypes = data.contactTypes;
+
+    if (data.associazioni.hasOwnProperty(assID)) {
+      const assElement = createAssociazioneCard(data.associazioni[assID]);
+      $("#associazione").empty().append(assElement);
+    }
   },
 });

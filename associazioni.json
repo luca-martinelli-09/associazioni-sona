@@ -7,85 +7,95 @@
     "contactTypes": {
         "place": {
             "name": "Sede",
-            "actionText": "Email",
-            "generatorLink": false,
+            "url": null,
             "icon": "📍",
-            "text": "$address$",
-            "subtext": "$info$"
+            "text": "$address$ ($name$)",
+            "subtext": "$info$",
+            "actionText": "Email",
+            "action": false
         },
         "website": {
             "name": "Sito web",
-            "actionText": "Sito web",
-            "generatorLink": "$url$",
+            "url": "$url$",
             "icon": "📍",
             "text": "$url$",
-            "subtext": ""
+            "subtext": false,
+            "actionText": "Sito web",
+            "action": false
         },
         "email": {
             "name": "Info",
-            "actionText": "Email",
-            "generatorLink": "mailto:$address$",
+            "url": "mailto:$address$",
             "icon": "📍",
             "text": "$address$ ($name$)",
-            "subtext": "$info$"
+            "subtext": "$info$",
+            "actionText": "Email",
+            "action": false
         },
         "phone": {
             "name": "Principale",
-            "actionText": "Chiama",
-            "generatorLink": "tel:$number$",
+            "url": "tel:$number$",
             "icon": "📍",
             "text": "$number$ ($name$)",
-            "subtext": "$info$"
+            "subtext": "$info$",
+            "actionText": "Chiama",
+            "action": false
         },
         "social": {
             "platform": {
                 "instagram": {
                     "name": "Instagram",
-                    "actionText": "Instagram",
-                    "generatorLink": "https://www.instagram.com/$profile$",
+                    "url": "https://www.instagram.com/$profile$",
                     "icon": "📍",
                     "text": "@$profile$",
-                    "subtext": ""
+                    "subtext": false,
+                    "actionText": "Instagram",
+                    "action": false
                 },
                 "facebook": {
                     "name": "Facebook",
-                    "actionText": "Facebook",
-                    "generatorLink": "https://www.facebook.com/$profile$",
+                    "url": "https://www.facebook.com/$profile$",
                     "icon": "📍",
                     "text": "@$profile$",
-                    "subtext": ""
+                    "subtext": false,
+                    "actionText": "Facebook",
+                    "action": false
                 },
                 "youtube": {
                     "name": "YouTube",
-                    "actionText": "YouTube",
-                    "generatorLink": "https://www.youtube.com/channel/$channel$",
+                    "url": "https://www.youtube.com/channel/$channel$",
                     "icon": "📍",
                     "text": "Vai al canale",
-                    "subtext": ""
+                    "subtext": false,
+                    "actionText": "YouTube",
+                    "action": false
                 },
                 "twitter": {
                     "name": "Twitter",
-                    "actionText": "Twitter",
-                    "generatorLink": "https://twitter.com/$profile$",
+                    "url": "https://twitter.com/$profile$",
                     "icon": "📍",
                     "text": "@$profile$",
-                    "subtext": ""
+                    "subtext": false,
+                    "actionText": "Twitter",
+                    "action": false
                 },
                 "whatsapp": {
                     "name": "Whatsapp",
-                    "actionText": "Whatsapp",
-                    "generatorLink": "https://wa.me/$number$",
+                    "url": "https://wa.me/$number$",
                     "icon": "📍",
                     "text": "$number$",
-                    "subtext": ""
+                    "subtext": false,
+                    "actionText": "Whatsapp",
+                    "action": false
                 },
                 "telegram": {
                     "name": "Telegram",
-                    "actionText": "Telegram",
-                    "generatorLink": "https://t.me/$profile$",
+                    "url": "https://t.me/$profile$",
                     "icon": "📍",
                     "text": "@$profile$",
-                    "subtext": ""
+                    "subtext": false,
+                    "actionText": "Telegram",
+                    "action": false
                 }
             }
         }
@@ -102,7 +112,7 @@
             "mainColor": "",
             "sGradient": "rgb(255 241 241)",
             "eGradient": "rgb(255 228 228)",
-            "contact": [
+            "contacts": [
                 {
                     "type": "place",
                     "address": "Via Roma, 25 - 37060, Sona (VR)"

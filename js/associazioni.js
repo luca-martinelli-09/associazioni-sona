@@ -11,7 +11,7 @@ $.ajax({
     for (const [assID, associazione] of Object.entries(data.associazioni)) {
       const assElement = createAssociazioneCard(associazione);
 
-      $("#associazioni").append(assElement);
+      $("#associazioni").empty().append(assElement);
     }
   },
 });
