@@ -6,7 +6,7 @@ function createAssociazioneCard(associazione) {
 
     assID = associazione.id;
     assName = associazione.name;
-    assUrl = baseSito + "associazione/" + assID;
+    assUrl = baseSito + "associazioni/" + assID;
 
     assTags = "";
     associazione.tags.forEach((tag) => {
