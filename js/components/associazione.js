@@ -61,7 +61,7 @@ function createAssociazioneFullCard(associazione) {
                   <div class="tags-container">${assTags}</div>
                   <p>${assDescription}</p>
                   <div class="list-information">${assContacts}</div>
-                  <div class="btn-group">${assActions}</div>
+                  <div class="btn-group mt-10">${assActions}</div>
               </div>
           </div>`;
 }
@@ -78,6 +78,9 @@ function generateContactSpan(contact) {
 
   var subtextElement = "";
   if (subtext != null) {
+    if (subtext.endsWith(" • ")) {
+      subtext = subtext.substring(0, subtext.length - 3);
+    }
     subtextElement = `<span class="subinfo">${subtext}</span>`;
   }
 
