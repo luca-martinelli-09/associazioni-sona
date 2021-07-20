@@ -1,6 +1,6 @@
 function createAssociazioneCard(associazione) {
     sColorGradient = associazione.sGradient;
-    sColorGradient = associazione.eGradient;
+    eColorGradient = associazione.eGradient;
 
     imgUrl = associazione.logoUrl;
 
