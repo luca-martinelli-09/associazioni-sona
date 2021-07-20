@@ -17,7 +17,7 @@ $.ajax({
       $("#associazione").empty().append("<h1>Scheda associazione</h1>").append(assElement);
 
       if (associazione.contributi != null && associazione.contributi.length > 0) {
-        $("#contributi").empty().append("<h2 class='my-10'>Contributi da P.A.</h2><div class='events-container'></div>");
+        $("#contributi").empty().append("<h2 class='mt-16 mb-10'>Contributi da P.A.</h2><div class='events-container'></div>");
 
         associazione.contributi.forEach((contributo) => {
           const contributoElement = createContributoCard(contributo);
