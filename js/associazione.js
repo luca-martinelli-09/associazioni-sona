@@ -12,7 +12,7 @@ $.ajax({
 
     if (data.associazioni.hasOwnProperty(assID)) {
       const assElement = createAssociazioneFullCard(data.associazioni[assID]);
-      $("#associazione").empty().append(assElement);
+      $("#associazione").empty().append("<h1>Scheda associazione</h1>").append(assElement);
 
       if (associazione.contributi != null && associazione.contributi.length > 0) {
         $("#contributi").empty().append("<h2 class='mt-10'>Contributi da P.A.</h2><div class='events-container'></div>");
