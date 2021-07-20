@@ -69,7 +69,7 @@ function createAssociazioneFullCard(associazione) {
 function generateContactSpan(contact) {
   const url = contact.url != null ? contact.url : null;
   const icon = contact.icon;
-  const subtext = contact.subtext != null && contact.subtext != "" ? contact.subtext : null;
+  var subtext = contact.subtext != null && contact.subtext != "" ? contact.subtext : null;
 
   var textElement = contact.text;
   if (url != null) {
