@@ -69,7 +69,7 @@ function createAssociazioneFullCard(associazione) {
 
 function generateContactSpan(contact) {
   const url = contact.url != null ? contact.url : null;
-  const icon = contact.icon;
+  const icon = contact.iconClass;
   var subtext = contact.subtext != null && contact.subtext != "" ? contact.subtext : null;
 
   var textElement = contact.text;
@@ -85,7 +85,7 @@ function generateContactSpan(contact) {
     subtextElement = `<span class="subinfo">${subtext}</span>`;
   }
 
-  return `<div class="info-element"><i class="feather icon-${icon}"></i><div class="flex flex-col">${textElement}${subtextElement}</div></div>`;
+  return `<div class="info-element"><i class="${icon}"></i><div class="flex flex-col">${textElement}${subtextElement}</div></div>`;
 }
 
 function generateContactAction(contact) {
