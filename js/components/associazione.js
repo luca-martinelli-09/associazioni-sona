@@ -134,7 +134,7 @@ function createContributoCard(contributo) {
               <div class="card-content">
                   <h3 class="mb-4">${conName}</h3>
                   <p class="mb-5">${conDescription}</p>
-                  <div class="info-element"><i class="fas fa-arrow-down" aria-hidden="true"></i><span>${conFrom}</span></div>
+                  <div class="info-element"><i class="fas fa-arrow-right" aria-hidden="true"></i><span>${conFrom}</span></div>
                   <div class="info-element"><i class="fas fa-euro-sign" aria-hidden="true"></i><span>${conAmount}</span></div>
               </div>
           </div>`;
