@@ -11,7 +11,7 @@ $.ajax({
     contactTypes = data.contactTypes;
 
     if (data.associazioni.hasOwnProperty(assID)) {
-      const assElement = createAssociazioneCard(data.associazioni[assID]);
+      const assElement = createAssociazioneFullCard(data.associazioni[assID]);
       $("#associazione").empty().append(assElement);
     }
   },
