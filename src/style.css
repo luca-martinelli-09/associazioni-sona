@@ -166,6 +166,15 @@ input[type="reset"]:active {
   margin: 0px 3px 3px 0px;
 }
 
+.list-information {
+  @apply grid grid-flow-row gap-3;
+  margin: 20px 0px;
+}
+
+.list-information .info-element {
+    @apply flex gap-3 items-center;
+}
+
 /* HEADER */
 
 header {
@@ -268,11 +277,7 @@ nav li a:hover {
   margin-bottom: 20px;
 }
 
-.list-information {
-  @apply grid grid-flow-row gap-3;
-  margin: 20px 0px;
-}
-
+/*
 .list-information span {
   @apply flex items-center;
 }
@@ -289,7 +294,7 @@ nav li a:hover {
 
 .list-information span.datetime:before {
   content: "🕑";
-}
+}*/
 
 /* ASSOCIAZIONI */
 
