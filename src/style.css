@@ -138,7 +138,7 @@ input[type="reset"]:active {
 }
 
 .btn-group {
-  @apply flex gap-3;
+  @apply flex gap-3 flex-wrap;
 }
 
 .btn-group button,
