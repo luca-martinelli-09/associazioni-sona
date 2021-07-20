@@ -78,10 +78,10 @@ function generateContactSpan(contact) {
 
   var subtextElement = "";
   if (subtext != null) {
-    subtextElement = `<span>${subtext}</span>`;
+    subtextElement = `<span class="mt-2">${subtext}</span>`;
   }
 
-  return `<div class="location"><span>${icon}</span>${textElement}${subtextElement}</div>`;
+  return `<div class="info-element"><i class="feather icon-${icon}"></i><div class="flex flex-col">${textElement}${subtextElement}</div></div>`;
 }
 
 function generateContactAction(contact) {
