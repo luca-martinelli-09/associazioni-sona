@@ -130,6 +130,12 @@
             "mainColor": "",
             "sGradient": "rgb(255 241 241)",
             "eGradient": "rgb(255 228 228)",
+            "attachments": [
+                {
+                    "name": "Statuto, 2009",
+                    "url": "https://www.bandadisona.it/files/Statuto%20CBS%202009.pdf"
+                }
+            ],
             "contacts": [
                 {
                     "type": "location",

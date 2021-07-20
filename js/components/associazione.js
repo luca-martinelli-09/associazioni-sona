@@ -52,6 +52,24 @@ function createAssociazioneFullCard(associazione) {
     assActions += contactInfo.action ? generateContactAction(contactInfo) : "";
   });
 
+  var assAttachments = "";
+  if(associazione.attachments != null && associazione.attachments.length > 0) {
+    assAttachments += `<h3 class="mt-6">Allegati</h3>
+                        <div class="list-information">`;
+    associazione.attachments.forEach((attachment) => {
+      assAttachments += `<div class="info-element">
+                          <i class="feather icon-paperclip" aria-hidden="true"></i>
+                          <div class="flex flex-col">
+                            <a href="${attachment.url}" target="_blank" rel="noopener noreferrer">${attachment.name}</a>
+                          </div>
+                        </div>`;
+    });
+    assAttachments += `</div>`;
+  }
+
+  assContactsElement = assContacts != "" ? `<h3 class="mt-6">Contatti</h3><div class="list-information">${assContacts}</div>` : "";
+  assActionsElement = assActions != "" ? `<div class="btn-group mt-10">${assActions}</div>` : "";
+
   return `<div class="card associazione-big">
               <div class="card-image">
                   <img src="${imgUrl}" alt="${assName}" />
@@ -60,9 +78,9 @@ function createAssociazioneFullCard(associazione) {
                   <h2>${assName}</h2>
                   <p>${assDescription}</p>
                   <div class="tags-container mt-3">${assTags}</div>
-                  <h3 class="mt-6">Contatti</h3>
-                  <div class="list-information">${assContacts}</div>
-                  <div class="btn-group mt-10">${assActions}</div>
+                  ${statutoElement}
+                  ${assContactsElement}
+                  ${assActionsElement}
               </div>
           </div>`;
 }
