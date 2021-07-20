@@ -1,7 +1,22 @@
 {
     "tags": {
+        "cultura": {
+            "name": "Associazione Culturale"
+        },
+        "sport": {
+            "name": "Associazione Sportiva"
+        },
         "musica": {
             "name": "Musica"
+        },
+        "educazione": {
+            "name": "Educazione"
+        },
+        "calcio": {
+            "name": "Calcio"
+        },
+        "tennis": {
+            "name": "Tennis"
         }
     },
     "contactTypes": {
@@ -126,7 +141,7 @@
             "description": "Il Corpo Bandistico di Sona è un'orchestra a fiati da più di 60 elementi. Nel suo repertorio, propone brani scelti tra generi e tradizioni diverse, ricercando soprattutto musiche che valorizzino tutti gli strumenti ed i timbri della banda.",
             "president": "Doriano Benedetti",
             "tags": [
-                "musica"
+                "cultura", "musica", "educazione"
             ],
             "mainColor": "#ff4057",
             "sGradient": "rgb(255 241 241)",
