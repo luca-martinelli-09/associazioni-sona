@@ -28,10 +28,10 @@ function mapJsonElement(generator, element) {
   return generated;
 }
 
-function formatDate(date) {
+function formatDate(dateString) {
   const months = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
 
-  const date = new Date(date);
+  const date = new Date(dateString);
 
   return [date.getDate(), months[date.getMonth()], date.getFullYear()].join(" ");
 }
