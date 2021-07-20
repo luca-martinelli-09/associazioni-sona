@@ -171,7 +171,7 @@ input[type="reset"]:active {
   margin: 20px 0px;
 }
 
-.list-information .info-element {
+.info-element {
     @apply flex gap-4 items-center;
 }
 
