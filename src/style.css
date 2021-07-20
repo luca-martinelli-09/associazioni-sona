@@ -320,7 +320,7 @@ nav li a:hover {
 }
 
 .associazione-big .card-image {
-  @apply flex border-b md:border-r md:border-b-0 border-black;
+  @apply flex border-b md:items-start md:border-b-0 border-black;
   padding: 30px;
 }
 
