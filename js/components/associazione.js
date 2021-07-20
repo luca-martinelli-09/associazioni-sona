@@ -127,11 +127,15 @@ function generateAttachment(attachment) {
 function createContributoCard(contributo) {
   const conName = contributo.name;
   const conDescription = contributo.description;
+  const conFrom = contributo.from;
+  const conAmount = contributo.amount;
 
-  return `<div class="card event-card">
+  return `<div class="card event">
               <div class="card-content">
                   <h2>${conName}</h2>
-                  <p>${conDescription}</p>
+                  <p class="mb-5">${conDescription}</p>
+                  <div class="info-element"><i class="fas fa-arrow-down" aria-hidden="true"></i><span>${conFrom}</span></div>
+                  <div class="info-element"><i class="fas fa-euro-sign" aria-hidden="true"></i><span>${conAmount}</span></div>
               </div>
           </div>`;
 }
