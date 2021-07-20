@@ -19,7 +19,7 @@
             "url": "$url$",
             "icon": "link",
             "text": "$url$",
-            "subtext": false,
+            "subtext": "$name$ • $info$",
             "actionText": "Sito web",
             "action": false
         },
