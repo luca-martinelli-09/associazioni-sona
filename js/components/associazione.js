@@ -60,7 +60,7 @@ function createAssociazioneFullCard(associazione) {
                   <h2>${assName}</h2>
                   <p>${assDescription}</p>
                   <div class="tags-container mt-3">${assTags}</div>
-                  <h3>Contatti</h3>
+                  <h3 class="mt-6">Contatti</h3>
                   <div class="list-information">${assContacts}</div>
                   <div class="btn-group mt-10">${assActions}</div>
               </div>
