@@ -1,4 +1,4 @@
-const baseSito = "./";
+var baseSito = "./";
 
 function getTokens(from) {
   if (location.href.lastIndexOf(from) >= 0) {

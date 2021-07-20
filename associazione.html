@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comune di Sona | Associazioni</title>
 
-    <link rel="icon" href="./res/logo.png" type="image/png">
+    <link rel="icon" href="../res/logo.png" type="image/png">
 
     <meta name="author" content="Luca Martinelli">
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Il portale ufficiale delle associazioni del Comune di Sona">
 
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
     <header>
         <div class="container">
-            <a href="./"><img src="./res/logo.png" class="logo" alt="Comune di Sona" /></a>
+            <a href="../"><img src="../res/logo.png" class="logo" alt="Comune di Sona" /></a>
             <div class="nav-title">
                 <h6>Comune di Sona</h6>
                 <span class="subtext">Associazioni</span>
@@ -32,10 +32,10 @@
     </header>
     <nav id="nav">
         <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./eventi">Eventi</a></li>
-            <li><a href="./#associazioni">Associazioni</a></li>
-            <li><a href="./forum">Forum delle associazioni</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../eventi">Eventi</a></li>
+            <li><a href="../#associazioni">Associazioni</a></li>
+            <li><a href="../forum">Forum delle associazioni</a></li>
             <!--<li><a href="./quiz">Che associazione sono?</a></li>-->
         </ul>
     </nav>
@@ -58,11 +58,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
-
-    <script>
-        document.write(getTokens("/associazioni/")[0]);
-    </script>
+    <script src="../js/index.js"></script>
+    <script>baseSito = "../";</script>
+    <script src="../js/components/associazione.js"></script>
+    <script src="../js/associazione.js"></script>
 </body>
 
 </html>
