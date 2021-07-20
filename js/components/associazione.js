@@ -56,21 +56,14 @@ function createAssociazioneFullCard(associazione) {
 
   var assAttachments = "";
   if (associazione.attachments != null && associazione.attachments.length > 0) {
-    assAttachments += `<h3 class="mt-6">Allegati</h3>
-                        <div class="list-information">`;
     associazione.attachments.forEach((attachment) => {
-      assAttachments += `<div class="info-element">
-                          <i class="feather icon-paperclip" aria-hidden="true"></i>
-                          <div class="flex flex-col">
-                            <a href="${attachment.url}" target="_blank" rel="noopener noreferrer">${attachment.name}</a>
-                          </div>
-                        </div>`;
+      assAttachments += generateAttachment(attachment);
     });
-    assAttachments += `</div>`;
   }
 
   assContactsElement = assContacts != "" ? `<h3 class="mt-6">Contatti</h3><div class="list-information">${assContacts}</div>` : "";
   assActionsElement = assActions != "" ? `<div class="btn-group mt-10">${assActions}</div>` : "";
+  assAttachmentsElement = assAttachments != "" ? `<h3 class="mt-6">Allegati</h3><div class="list-information">${assAttachments}</div>` : "";
 
   return `<div class="card associazione-big">
               <div class="card-image">
@@ -80,7 +73,7 @@ function createAssociazioneFullCard(associazione) {
                   <h2>${assName}</h2>
                   <p>${assDescription}</p>
                   <div class="tags-container mt-3">${assTags}</div>
-                  ${assAttachments}
+                  ${assAttachmentsElement}
                   ${assContactsElement}
                   ${assActionsElement}
               </div>
@@ -110,11 +103,22 @@ function generateContactSpan(contact) {
 }
 
 function generateContactAction(contact) {
-  const url = contact.url != null ? contact.url : null;
+  const url = contact.url != null && contact.url != "" ? contact.url : null;
   const actionText = contact.actionText;
 
   if (url != null) {
     return `<a href="${url}" role="button" class="button">${actionText}</a>`;
+  }
+
+  return "";
+}
+
+function generateAttachment(attachment) {
+  const url = attachment.url && attachment.url != "" ? attachment.url : null;
+  const attachmentName = attachment.name;
+
+  if (url != null) {
+    return `<div class="info-element"><i class="feather icon-paperclip" aria-hidden="true"></i><a href="${url}" target="_blank" rel="noopener noreferrer">${attachmentName}</a></div>`;
   }
 
   return "";
