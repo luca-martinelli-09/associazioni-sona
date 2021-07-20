@@ -78,7 +78,7 @@ function generateContactSpan(contact) {
 
   var subtextElement = "";
   if (subtext != null) {
-    subtextElement = `<span class="mt-2">${subtext}</span>`;
+    subtextElement = `<span class="subinfo">${subtext}</span>`;
   }
 
   return `<div class="info-element"><i class="feather icon-${icon}"></i><div class="flex flex-col">${textElement}${subtextElement}</div></div>`;
