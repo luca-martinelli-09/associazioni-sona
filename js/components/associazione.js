@@ -131,11 +131,13 @@ function createContributoCard(contributo) {
   const conDescription = contributo.description;
   const conFrom = contributo.from;
   const conAmount = contributo.amount;
+  const conDate = formatDate(contributo.date);
 
   return `<div class="card event">
               <div class="card-content">
                   <h3 class="mb-4">${conName}</h3>
                   <p class="mb-5">${conDescription}</p>
+                  <div class="info-element"><i class="fas fa-calendar" aria-hidden="true"></i><span>${conDate}</span></div>
                   <div class="info-element"><i class="fas fa-arrow-right" aria-hidden="true"></i><span>${conFrom}</span></div>
                   <div class="info-element"><i class="fas fa-euro-sign" aria-hidden="true"></i><span>${conAmount}</span></div>
               </div>
