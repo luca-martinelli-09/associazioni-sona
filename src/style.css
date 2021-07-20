@@ -179,6 +179,10 @@ input[type="reset"]:active {
     @apply mt-0 text-sm text-gray-600;
 }
 
+.info-element i.location {
+    color: #D54C4C;
+}
+
 /* HEADER */
 
 header {

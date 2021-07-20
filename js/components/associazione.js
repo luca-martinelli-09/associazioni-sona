@@ -85,7 +85,7 @@ function generateContactSpan(contact) {
     subtextElement = `<span class="subinfo">${subtext}</span>`;
   }
 
-  return `<div class="info-element"><i class="${icon}"></i><div class="flex flex-col">${textElement}${subtextElement}</div></div>`;
+  return `<div class="info-element"><i class="${icon}" aria-hidden="true"></i><div class="flex flex-col">${textElement}${subtextElement}</div></div>`;
 }
 
 function generateContactAction(contact) {
