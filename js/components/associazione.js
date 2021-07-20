@@ -76,6 +76,7 @@ function generateContactSpan(contact) {
     textElement = `<a href="${url}" target="_blank" rel="noopener noreferrer">${textElement}</a>`;
   }
 
+  var subtextElement = "";
   if (subtext != null) {
     subtextElement = `<span>${subtext}</span>`;
   }
