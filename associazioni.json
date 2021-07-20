@@ -8,7 +8,7 @@
         "place": {
             "name": "Sede",
             "url": null,
-            "icon": "📍",
+            "icon": "map-pin",
             "text": "$address$ ($name$)",
             "subtext": "$info$",
             "actionText": "Email",
@@ -17,7 +17,7 @@
         "website": {
             "name": "Sito web",
             "url": "$url$",
-            "icon": "📍",
+            "icon": "link",
             "text": "$url$",
             "subtext": false,
             "actionText": "Sito web",
@@ -26,7 +26,7 @@
         "email": {
             "name": "Info",
             "url": "mailto:$address$",
-            "icon": "📍",
+            "icon": "mail",
             "text": "$address$ ($name$)",
             "subtext": "$info$",
             "actionText": "Email",
@@ -35,7 +35,7 @@
         "phone": {
             "name": "Principale",
             "url": "tel:$number$",
-            "icon": "📍",
+            "icon": "phone",
             "text": "$number$ ($name$)",
             "subtext": "$info$",
             "actionText": "Chiama",
@@ -45,7 +45,7 @@
             "instagram": {
                 "name": "Instagram",
                 "url": "https://www.instagram.com/$profile$",
-                "icon": "📍",
+                "icon": "instagram",
                 "text": "@$profile$",
                 "subtext": false,
                 "actionText": "Instagram",
@@ -54,7 +54,7 @@
             "facebook": {
                 "name": "Facebook",
                 "url": "https://www.facebook.com/$profile$",
-                "icon": "📍",
+                "icon": "facebook",
                 "text": "@$profile$",
                 "subtext": false,
                 "actionText": "Facebook",
@@ -63,7 +63,7 @@
             "youtube": {
                 "name": "YouTube",
                 "url": "https://www.youtube.com/channel/$channel$",
-                "icon": "📍",
+                "icon": "youtube",
                 "text": "Vai al canale",
                 "subtext": false,
                 "actionText": "YouTube",
@@ -72,7 +72,7 @@
             "twitter": {
                 "name": "Twitter",
                 "url": "https://twitter.com/$profile$",
-                "icon": "📍",
+                "icon": "twitter",
                 "text": "@$profile$",
                 "subtext": false,
                 "actionText": "Twitter",
@@ -81,7 +81,7 @@
             "whatsapp": {
                 "name": "Whatsapp",
                 "url": "https://wa.me/$number$",
-                "icon": "📍",
+                "icon": "message-circle",
                 "text": "$number$",
                 "subtext": false,
                 "actionText": "Whatsapp",
@@ -90,7 +90,7 @@
             "telegram": {
                 "name": "Telegram",
                 "url": "https://t.me/$profile$",
-                "icon": "📍",
+                "icon": "message-circle",
                 "text": "@$profile$",
                 "subtext": false,
                 "actionText": "Telegram",
