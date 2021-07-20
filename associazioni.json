@@ -42,61 +42,59 @@
             "action": false
         },
         "social": {
-            "platform": {
-                "instagram": {
-                    "name": "Instagram",
-                    "url": "https://www.instagram.com/$profile$",
-                    "icon": "📍",
-                    "text": "@$profile$",
-                    "subtext": false,
-                    "actionText": "Instagram",
-                    "action": false
-                },
-                "facebook": {
-                    "name": "Facebook",
-                    "url": "https://www.facebook.com/$profile$",
-                    "icon": "📍",
-                    "text": "@$profile$",
-                    "subtext": false,
-                    "actionText": "Facebook",
-                    "action": false
-                },
-                "youtube": {
-                    "name": "YouTube",
-                    "url": "https://www.youtube.com/channel/$channel$",
-                    "icon": "📍",
-                    "text": "Vai al canale",
-                    "subtext": false,
-                    "actionText": "YouTube",
-                    "action": false
-                },
-                "twitter": {
-                    "name": "Twitter",
-                    "url": "https://twitter.com/$profile$",
-                    "icon": "📍",
-                    "text": "@$profile$",
-                    "subtext": false,
-                    "actionText": "Twitter",
-                    "action": false
-                },
-                "whatsapp": {
-                    "name": "Whatsapp",
-                    "url": "https://wa.me/$number$",
-                    "icon": "📍",
-                    "text": "$number$",
-                    "subtext": false,
-                    "actionText": "Whatsapp",
-                    "action": false
-                },
-                "telegram": {
-                    "name": "Telegram",
-                    "url": "https://t.me/$profile$",
-                    "icon": "📍",
-                    "text": "@$profile$",
-                    "subtext": false,
-                    "actionText": "Telegram",
-                    "action": false
-                }
+            "instagram": {
+                "name": "Instagram",
+                "url": "https://www.instagram.com/$profile$",
+                "icon": "📍",
+                "text": "@$profile$",
+                "subtext": false,
+                "actionText": "Instagram",
+                "action": false
+            },
+            "facebook": {
+                "name": "Facebook",
+                "url": "https://www.facebook.com/$profile$",
+                "icon": "📍",
+                "text": "@$profile$",
+                "subtext": false,
+                "actionText": "Facebook",
+                "action": false
+            },
+            "youtube": {
+                "name": "YouTube",
+                "url": "https://www.youtube.com/channel/$channel$",
+                "icon": "📍",
+                "text": "Vai al canale",
+                "subtext": false,
+                "actionText": "YouTube",
+                "action": false
+            },
+            "twitter": {
+                "name": "Twitter",
+                "url": "https://twitter.com/$profile$",
+                "icon": "📍",
+                "text": "@$profile$",
+                "subtext": false,
+                "actionText": "Twitter",
+                "action": false
+            },
+            "whatsapp": {
+                "name": "Whatsapp",
+                "url": "https://wa.me/$number$",
+                "icon": "📍",
+                "text": "$number$",
+                "subtext": false,
+                "actionText": "Whatsapp",
+                "action": false
+            },
+            "telegram": {
+                "name": "Telegram",
+                "url": "https://t.me/$profile$",
+                "icon": "📍",
+                "text": "@$profile$",
+                "subtext": false,
+                "actionText": "Telegram",
+                "action": false
             }
         }
     },
