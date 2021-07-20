@@ -334,6 +334,6 @@ nav li a:hover {
   margin-bottom: 20px;
 }
 
-.associazioe-big .list-information {
+.associazione-big .list-information {
     @apply md:grid-cols-2 lg:grid-cols-3;
 }
