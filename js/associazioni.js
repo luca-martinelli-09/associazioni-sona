@@ -8,10 +8,11 @@ $.ajax({
     allTags = data.tags;
     contactTypes = data.contactTypes;
 
+    $("#associazioni").empty();
     for (const [assID, associazione] of Object.entries(data.associazioni)) {
       const assElement = createAssociazioneCard(associazione);
 
-      $("#associazioni").empty().append(assElement);
+      $("#associazioni").append(assElement);
     }
   },
 });

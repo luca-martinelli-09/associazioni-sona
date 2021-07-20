@@ -123,3 +123,15 @@ function generateAttachment(attachment) {
 
   return "";
 }
+
+function createContributoCard(contributo) {
+  const conName = contributo.name;
+  const conDescription = contributo.description;
+
+  return `<div class="card event-card">
+              <div class="card-content">
+                  <h2>${conName}</h2>
+                  <p>${conDescription}</p>
+              </div>
+          </div>`;
+}
