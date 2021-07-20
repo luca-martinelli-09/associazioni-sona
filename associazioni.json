@@ -5,12 +5,12 @@
         }
     },
     "contactTypes": {
-        "place": {
+        "location": {
             "name": "Sede",
             "url": null,
             "icon": "map-pin",
-            "text": "$address$ ($name$)",
-            "subtext": "$info$",
+            "text": "$address$",
+            "subtext": "$name$ • $info$",
             "actionText": "Email",
             "action": false
         },
@@ -27,8 +27,8 @@
             "name": "Info",
             "url": "mailto:$address$",
             "icon": "mail",
-            "text": "$address$ ($name$)",
-            "subtext": "$info$",
+            "text": "$address$",
+            "subtext": "$name$ • $info$",
             "actionText": "Email",
             "action": false
         },
@@ -36,8 +36,8 @@
             "name": "Principale",
             "url": "tel:$number$",
             "icon": "phone",
-            "text": "$number$ ($name$)",
-            "subtext": "$info$",
+            "text": "$number$",
+            "subtext": "$name$ • $info$",
             "actionText": "Chiama",
             "action": false
         },
@@ -47,7 +47,7 @@
                 "url": "https://www.instagram.com/$profile$",
                 "icon": "instagram",
                 "text": "@$profile$",
-                "subtext": false,
+                "subtext": "$info$",
                 "actionText": "Instagram",
                 "action": false
             },
@@ -56,7 +56,7 @@
                 "url": "https://www.facebook.com/$profile$",
                 "icon": "facebook",
                 "text": "@$profile$",
-                "subtext": false,
+                "subtext": "$info$",
                 "actionText": "Facebook",
                 "action": false
             },
@@ -65,7 +65,7 @@
                 "url": "https://www.youtube.com/channel/$channel$",
                 "icon": "youtube",
                 "text": "Vai al canale",
-                "subtext": false,
+                "subtext": "$info$",
                 "actionText": "YouTube",
                 "action": false
             },
@@ -74,7 +74,7 @@
                 "url": "https://twitter.com/$profile$",
                 "icon": "twitter",
                 "text": "@$profile$",
-                "subtext": false,
+                "subtext": "$info$",
                 "actionText": "Twitter",
                 "action": false
             },
@@ -83,7 +83,7 @@
                 "url": "https://wa.me/$number$",
                 "icon": "message-circle",
                 "text": "$number$",
-                "subtext": false,
+                "subtext": "$info$",
                 "actionText": "Whatsapp",
                 "action": false
             },
@@ -92,7 +92,7 @@
                 "url": "https://t.me/$profile$",
                 "icon": "message-circle",
                 "text": "@$profile$",
-                "subtext": false,
+                "subtext": "$info$",
                 "actionText": "Telegram",
                 "action": false
             }
@@ -112,7 +112,7 @@
             "eGradient": "rgb(255 228 228)",
             "contacts": [
                 {
-                    "type": "place",
+                    "type": "location",
                     "address": "Via Roma, 25 - 37060, Sona (VR)"
                 },
                 {

@@ -175,6 +175,10 @@ input[type="reset"]:active {
     @apply flex gap-3 items-center;
 }
 
+.info-element .subinfo {
+    @apply mt-2 text-sm text-gray-600;
+}
+
 /* HEADER */
 
 header {
@@ -276,25 +280,6 @@ nav li a:hover {
 .event h2 {
   margin-bottom: 20px;
 }
-
-/*
-.list-information span {
-  @apply flex items-center;
-}
-
-.list-information span:before {
-  content: "";
-  margin-right: 5px;
-}
-
-.list-information span.location:before {
-  content: "📍";
-  margin: 0px 9px 0px 5px;
-}
-
-.list-information span.datetime:before {
-  content: "🕑";
-}*/
 
 /* ASSOCIAZIONI */
 
