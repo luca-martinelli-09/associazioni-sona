@@ -60,10 +60,11 @@ function formatDateRange(startDate, endDate, withTime = true) {
       return formatDate(startDate, true);
     }
   } else {
+    endDate.setMilliseconds(endDate.getMilliseconds() - ONE_DAY);
     if (withTime) {
-      return [formatDateTime(startDate, true), formatDateTime(endDate.setMilliseconds(endDate.getMilliseconds() - ONE_DAY), true)].join(" - ");
+      return [formatDateTime(startDate, true), formatDateTime(endDate, true)].join(" - ");
     } else {
-      return [formatDate(startDate, true), formatDate(endDate.setMilliseconds(endDate.getMilliseconds() - ONE_DAY), true)].join(" - ");
+      return [formatDate(startDate, true), formatDate(endDate, true)].join(" - ");
     }
   }
 }
