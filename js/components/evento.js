@@ -7,9 +7,14 @@ function createEventCard(evento) {
   const eventTitle = evento.summary;
   const eventDescription = evento.description;
   const eventUrl = evento.htmlLink;
-  const eventoImg = evento.imgUrl;
 
   const dateElement = formatDateRange(startEventDate, endEventDate, isDateTime);
+
+  var eventoImg =  null;
+
+  if(evento.attachments != undefined && evento.attachments != null && evento.attachments.length > 0) {
+    eventoImg = getImgFromAttachments(evento.attachments);
+  }
 
   const imgElement = eventoImg != null ? `<div class="card-image"><img src="${eventoImg}" alt="${eventTitle}" /></div>` : "";
   const descriptionElement = eventDescription != undefined && eventDescription != null ? `<p>${eventDescription}</p>` : "";
@@ -30,4 +35,14 @@ function createEventCard(evento) {
                     <a href="${eventUrl}" role="button" class="button m-0">Più informazioni</a>
                 </div>
             </div>`;
+}
+
+function getImgFromAttachments(attachments) {
+  attachments.forEach((attachment) => {
+    if(attachment.mimeType.substring("image") == 0) {
+      return "https://drive.google.com/uc?id=" + attachment.fileId;
+    }
+  });
+
+  return null;
 }
