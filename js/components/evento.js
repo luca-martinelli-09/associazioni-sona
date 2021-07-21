@@ -9,7 +9,7 @@ function createEventCard(evento) {
   const eventUrl = evento.htmlLink;
 
   if (eventDescription != undefined && eventDescription != null && eventDescription.length > 300) {
-    eventDescription = eventDescription.substring(0, 300) + "...";
+    eventDescription = eventDescription.substring(0, 200) + "...";
   }
 
   const dateElement = formatDateRange(startEventDate, endEventDate, isDateTime);
