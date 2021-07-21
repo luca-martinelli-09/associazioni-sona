@@ -135,7 +135,7 @@ function createContributoCard(contributo) {
 
   return `<div class="card event">
               <div class="card-content">
-                  <h3 class="mb-4">${conName}</h3>
+                  <h4 class="mb-4">${conName}</h4>
                   <p class="mb-5">${conDescription}</p>
                   <div class="info-element"><i class="far fa-calendar" aria-hidden="true"></i><span>${conDate}</span></div>
                   <div class="info-element"><i class="fas fa-arrow-right" aria-hidden="true"></i><span>${conFrom}</span></div>
