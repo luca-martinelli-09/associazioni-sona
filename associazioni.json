@@ -6,6 +6,9 @@
         "sport": {
             "name": "Associazione Sportiva"
         },
+        "eventi": {
+            "name": "Eventi"
+        },
         "musica": {
             "name": "Musica"
         },
@@ -134,6 +137,49 @@
         }
     },
     "associazioni": {
+        "evento-tra-i-salici": {
+            "id": "evento-tra-i-salici",
+            "name": "(E)vento tra i salici",
+            "logoUrl": "https://eventotraisalici.files.wordpress.com/2016/02/immagine-profilo.jpg?w=600",
+            "description": "L’Associazione (E)Vento tra i salici nasce dallo spirito di aggregazione di alcuni ragazzi della provincia di Verona, intenzionati a dare una voce concreta alla creatività giovanile grazie alla promozione ed organizzazione di eventi culturali.",
+            "president": "Beatrice Zoccatelli",
+            "tags": [
+                "cultura",
+                "eventi"
+            ],
+            "mainColor": "#4f1f5d",
+            "sGradient": "#fdf4ff",
+            "eGradient": "#f9e6ff",
+            "contacts": [
+                {
+                    "type": "location",
+                    "address": "Via Celà, 53 - 37060, San Giorgio in Salici (VR)"
+                },
+                {
+                    "type": "website",
+                    "url": "https://eventotraisalici.wordpress.com/"
+                },
+                {
+                    "type": "email",
+                    "address": "eventotraisalici@gmail.com",
+                    "action": true
+                },
+                {
+                    "type": "phone",
+                    "number": "3471614526"
+                },
+                {
+                    "type": "social",
+                    "platform": "instagram",
+                    "profile": "eventotraisalici"
+                },
+                {
+                    "type": "social",
+                    "platform": "facebook",
+                    "profile": "EVentotraisalici"
+                }
+            ]
+        },
         "corpo-bandistico-sona": {
             "id": "corpo-bandistico-sona",
             "name": "Corpo Bandistico di Sona",
@@ -144,8 +190,8 @@
                 "cultura", "musica", "educazione"
             ],
             "mainColor": "#ff4057",
-            "sGradient": "rgb(255 241 241)",
-            "eGradient": "rgb(255 228 228)",
+            "sGradient": "#fff1f1",
+            "eGradient": "#ffe4e4",
             "attachments": [
                 {
                     "name": "Statuto, 2009",
