@@ -1,4 +1,5 @@
 var baseSito = "./";
+const ONE_DAY = 24 * 60 * 60 * 1000;
 
 function getTokens(from) {
   if (location.href.lastIndexOf(from) >= 0) {
@@ -15,20 +16,23 @@ function mapJsonElement(generator, element) {
 
   for ([key, val] of Object.entries(generator)) {
     if (!element.hasOwnProperty(key)) {
-      generated[key] = val != null && val != "" ? val.replace(/\$[a-zA-Z0-9-_]+\$/g, function (match) {
-        const elementKey = match.replace(/\$/g, "");
-        if (generated.hasOwnProperty(elementKey)) {
-          return encodeUriComponent(generated[elementKey]);
-        }
-        return "";
-      }) : null;
+      generated[key] =
+        val != null && val != ""
+          ? val.replace(/\$[a-zA-Z0-9-_]+\$/g, function (match) {
+              const elementKey = match.replace(/\$/g, "");
+              if (generated.hasOwnProperty(elementKey)) {
+                return encodeUriComponent(generated[elementKey]);
+              }
+              return "";
+            })
+          : null;
     }
   }
 
   return generated;
 }
 
-function formatDate(dateString, isDate=false) {
+function formatDate(dateString, isDate = false) {
   const months = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
 
   const date = isDate == false ? new Date(dateString) : dateString;
@@ -49,7 +53,7 @@ function formatDateTime(dateString, isDate = false) {
 }
 
 function formatDateRange(startDate, endDate, withTime = true) {
-  if (endDate - startDate <= 24 * 60 * 60 * 1000) {
+  if (endDate - startDate <= ONE_DAY) {
     if (withTime) {
       return [formatDate(startDate, true), [formatTime(startDate), formatTime(endDate)].join("-")].join(", ");
     } else {
@@ -57,9 +61,9 @@ function formatDateRange(startDate, endDate, withTime = true) {
     }
   } else {
     if (withTime) {
-      return [formatDateTime(startDate, true), formatDateTime(endDate, true)].join(" - ");
+      return [formatDateTime(startDate, true), formatDateTime(endDate - ONE_DAY, true)].join(" - ");
     } else {
-      return [formatDate(startDate, true), formatDate(endDate, true)].join(" - ");
+      return [formatDate(startDate, true), formatDate(endDate - ONE_DAY, true)].join(" - ");
     }
   }
 }
