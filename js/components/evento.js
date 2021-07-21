@@ -9,7 +9,7 @@ function createEventCard(evento) {
   const eventUrl = evento.htmlLink;
   const eventoImg = evento.imgUrl;
 
-  const dateElement = formatDateRange(startDate, endDate, isDateTime);
+  const dateElement = formatDateRange(startEventDate, endEventDate, isDateTime);
 
   const imgElement = eventoImg != null ? `<div class="card-image"><img src="${eventoImg}" alt="${eventTitle}" /></div>` : "";
   const descriptionElement = eventDescription != undefined && eventDescription != null ? `<p>${eventDescription}</p>` : "";
