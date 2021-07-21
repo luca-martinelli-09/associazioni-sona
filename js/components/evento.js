@@ -1,12 +1,14 @@
 function createEventCard(evento) {
   const eventLocation = evento.location;
   const eventLocationUrl = "https://www.google.com/maps/search/" + encodeURIComponent(evento.location);
-  const startEventDate = evento.start.dateTime;
-  const endEventDate = evento.end.dateTime;
+  const startEventDate = evento.start.dateTime != undefined ? new Date(evento.start.dateTime) : new Date(evento.start.date);
+  const endEventDate = evento.end.dateTime != undefined ? new Date(evento.end.dateTime) : new Date(evento.end.date);
   const eventTitle = evento.summary;
   const eventDescription = evento.description;
   const eventUrl = evento.htmlLink;
   const eventoImg = evento.imgUrl;
+
+  const dateElement = "";
 
   const imgElement = eventoImg != null ? `<div class="card-image"><img src="${eventoImg}" alt="${eventTitle}" /></div>` : "";
   const descriptionElement = eventDescription != undefined && eventDescription != null ? `<p>${eventDescription}</p>` : "";
@@ -27,4 +29,9 @@ function createEventCard(evento) {
                     <a href="${eventUrl}" role="button" class="button m-0">Più informazioni</a>
                 </div>
             </div>`;
+}
+
+function dateRangeToString(startDate, endDate) {
+  if (endDate - startDate <= 24 * 60 * 60 * 1000) {
+  }
 }
