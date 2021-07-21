@@ -12,8 +12,6 @@ function createEventCard(evento) {
 
   var eventoImg =  null;
 
-  console.log(evento.attachments);
-
   if(evento.attachments != undefined && evento.attachments != null && evento.attachments.length > 0) {
     eventoImg = getImgFromAttachments(evento.attachments);
   }
@@ -41,9 +39,7 @@ function createEventCard(evento) {
 
 function getImgFromAttachments(attachments) {
   attachments.forEach((attachment) => {
-    console.log(attachment);
-    console.log(attachment.mimeType.substring("image"));
-    if(attachment.mimeType.substring("image") == 0) {
+    if (attachment.mimeType.indexOf("image") == 0) {
       return "https://drive.google.com/uc?id=" + attachment.fileId;
     }
   });
