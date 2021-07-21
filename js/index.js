@@ -28,12 +28,40 @@ function mapJsonElement(generator, element) {
   return generated;
 }
 
-function formatDate(dateString) {
+function formatDate(dateString, isDate=false) {
   const months = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
 
-  const date = new Date(dateString);
+  const date = isDate == false ? new Date(dateString) : dateString;
 
   return [date.getDate(), months[date.getMonth()], date.getFullYear()].join(" ");
+}
+
+function formatTime(dateString, isDate = false) {
+  const date = isDate == false ? new Date(dateString) : dateString;
+
+  return [date.getHours(), date.getMinutes()].join(":");
+}
+
+function formatDateTime(dateString, isDate = false) {
+  const date = isDate == false ? new Date(dateString) : dateString;
+
+  return [formatDate(date, true), formatTime(date, true)].join(", ");
+}
+
+function formatDateRange(startDate, endDate, withTime = true) {
+  if (endDate - startDate <= 24 * 60 * 60 * 1000) {
+    if (withTime) {
+      return [formatDate(startDate, true), [formatTime(startDate), formatTime(endDate)].join("-")].join(", ");
+    } else {
+      return formatDate(startDate, true);
+    }
+  } else {
+    if (withTime) {
+      return [formatDateTime(startDate, true), formatDateTime(endDate, true)].join(" - ");
+    } else {
+      return [formatDate(startDate, true), formatDate(endDate, true)].join(" - ");
+    }
+  }
 }
 
 $(".menu-toggle").click(function (e) {
