@@ -33,7 +33,7 @@ function mapJsonElement(generator, element) {
 }
 
 function padDate(number) {
-  if (number < 10) return " " + number;
+  if (number < 10) return "0" + number;
   return number;
 }
 
