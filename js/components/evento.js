@@ -8,7 +8,7 @@ function createEventCard(evento) {
   var eventDescription = evento.description;
   const eventUrl = evento.htmlLink;
 
-  if(eventDescription.length > 300) {
+  if (eventDescription != undefined && eventDescription != null && eventDescription.length > 300) {
     eventDescription = eventDescription.substring(0, 300) + "...";
   }
 
