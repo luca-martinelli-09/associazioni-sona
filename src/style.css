@@ -191,18 +191,19 @@ input[type="reset"]:active {
 .message {
   @apply border border-black px-5 py-2;
   border-radius: 3px;
+  box-shadow: 3px 3px 0px var(--shadow-color-card);
 }
 
 .message.error {
-  @apply bg-red-200;
+  @apply bg-red-100;
 }
 
 .message.warning {
-  @apply bg-yellow-200;
+  @apply bg-yellow-100;
 }
 
 .message.success {
-  @apply bg-green-200;
+  @apply bg-green-100;
 }
 
 /* HEADER */

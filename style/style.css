@@ -1055,21 +1055,22 @@ input[type="reset"].m-0 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 3px;
+  box-shadow: 3px 3px 0px var(--shadow-color-card);
 }
 
 .message.error {
   --tw-bg-opacity: 1;
-  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
 }
 
 .message.warning {
   --tw-bg-opacity: 1;
-  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
 }
 
 .message.success {
   --tw-bg-opacity: 1;
-  background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
 }
 
 /* HEADER */
