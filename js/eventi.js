@@ -6,15 +6,19 @@ function listEvents(maxResults = null, timeMin = null, timeMax = null) {
   const timeMaxParam = timeMax != null ? { timeMax: timeMax } : {};
   const timeMinParam = timeMin != null ? { timeMin: timeMin } : {};
 
+  const spinner = spinnerElement.clone();
+  $("#eventi").empty().append(spinner);
+
   $.ajax({
     url: "https://www.googleapis.com/calendar/v3/calendars/" + calendarId + "/events",
     data: $.param({ key: apiKey, ...maxResultsParam, ...timeMaxParam, ...timeMinParam }),
     type: "GET",
+    complete: function () {
+      $("#eventi .spinner").remove();
+    },
     success: function (data) {
       var eventi = data.items;
       eventi = eventi.reverse();
-
-      $("#eventi").empty();
 
       if (eventi.length > 0) {
         eventi.forEach((evento) => {

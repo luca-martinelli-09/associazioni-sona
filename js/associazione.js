@@ -3,28 +3,36 @@ var contactTypes;
 
 var assID = getTokens("/associazioni/")[0];
 
-$.ajax({
-  url: baseSito + "associazioni.json",
-  type: "GET",
-  success: function (data) {
-    allTags = data.tags;
-    contactTypes = data.contactTypes;
+function listAssociazione(assID) {
+    const spinner = spinnerElement.clone();
+    $("#associazione").empty().append(spinner);
 
-    if (data.associazioni.hasOwnProperty(assID)) {
-      const associazione = data.associazioni[assID];
+    $.ajax({
+      url: baseSito + "associazioni.json",
+      type: "GET",
+      complete: function () {
+        $("#associazione .spinner").remove();
+      },
+      success: function (data) {
+        allTags = data.tags;
+        contactTypes = data.contactTypes;
 
-      const assElement = createAssociazioneFullCard(associazione);
-      $("#associazione").empty().append("<h1>Scheda associazione</h1>").append(assElement);
+        if (data.associazioni.hasOwnProperty(assID)) {
+          const associazione = data.associazioni[assID];
 
-      if (associazione.contributi != null && associazione.contributi.length > 0) {
-        $("#contributi").empty().append("<h2 class='mt-16 mb-10'>Contributi da P.A.</h2><div class='events-container'></div>");
+          const assElement = createAssociazioneFullCard(associazione);
+          $("#associazione").empty().append("<h1>Scheda associazione</h1>").append(assElement);
 
-        associazione.contributi.forEach((contributo) => {
-          const contributoElement = createContributoCard(contributo);
+          if (associazione.contributi != null && associazione.contributi.length > 0) {
+            $("#contributi").empty().append("<h2 class='mt-16 mb-10'>Contributi da P.A.</h2><div class='events-container'></div>");
 
-          $("#contributi .events-container").append(contributoElement);
-        });
-      }
-    }
-  },
-});
+            associazione.contributi.forEach((contributo) => {
+              const contributoElement = createContributoCard(contributo);
+
+              $("#contributi .events-container").append(contributoElement);
+            });
+          }
+        }
+      },
+    });
+}
