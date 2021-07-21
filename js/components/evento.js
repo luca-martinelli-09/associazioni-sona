@@ -10,9 +10,9 @@ function createEventCard(evento) {
 
   const dateElement = formatDateRange(startEventDate, endEventDate, isDateTime);
 
-  var eventoImg =  null;
+  var eventoImg = null;
 
-  if(evento.attachments != undefined && evento.attachments != null && evento.attachments.length > 0) {
+  if (evento.attachments != undefined && evento.attachments != null && evento.attachments.length > 0) {
     eventoImg = getImgFromAttachments(evento.attachments);
   }
 
@@ -41,7 +41,7 @@ function getImgFromAttachments(attachments) {
   fileUrl = null;
 
   attachments.forEach((attachment) => {
-    if (attachment.mimeType.indexOf("image") === 0) {
+    if (attachment.mimeType != undefined && attachment.mimeType != null && attachment.mimeType.indexOf("image") === 0) {
       fileUrl = "https://drive.google.com/uc?id=" + attachment.fileId;
     }
   });
