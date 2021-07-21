@@ -11,7 +11,8 @@ function listEvents(maxResults = null, timeMin = null, timeMax = null) {
     data: $.param({ key: apiKey, ...maxResultsParam, ...timeMaxParam, ...timeMinParam }),
     type: "GET",
     success: function (data) {
-      const eventi = data.items;
+      var eventi = data.items;
+      eventi = eventi.reverse();
 
       $("#eventi").empty();
 
