@@ -39,11 +39,15 @@ function createEventCard(evento) {
 }
 
 function getImgFromAttachments(attachments) {
+  fileUrl = null;
+
   attachments.forEach((attachment) => {
     if (attachment.mimeType.indexOf("image") === 0) {
-      return "https://drive.google.com/uc?id=" + attachment.fileId;
+      console.log(attachment.fileId);
+      fileUrl = "https://drive.google.com/uc?id=" + attachment.fileId;
+      break;
     }
   });
 
-  return null;
+  return fileUrl;
 }
