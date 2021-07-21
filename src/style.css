@@ -157,6 +157,7 @@ input[type="reset"]:active {
   @apply border border-black overflow-hidden no-underline text-black;
   border-radius: 4px;
   box-shadow: 10px 10px 0px var(--shadow-color-card);
+  animation: 600ms ease-in fade;
 }
 
 .tags-container {
@@ -204,6 +205,16 @@ input[type="reset"]:active {
 
 .message.success {
   @apply bg-green-100;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* HEADER */
