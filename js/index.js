@@ -61,9 +61,9 @@ function formatDateRange(startDate, endDate, withTime = true) {
     }
   } else {
     if (withTime) {
-      return [formatDateTime(startDate, true), formatDateTime(endDate - ONE_DAY, true)].join(" - ");
+      return [formatDateTime(startDate, true), formatDateTime(endDate.setMilliseconds(endDate.getMilliseconds() - ONE_DAY), true)].join(" - ");
     } else {
-      return [formatDate(startDate, true), formatDate(endDate - ONE_DAY, true)].join(" - ");
+      return [formatDate(startDate, true), formatDate(endDate.setMilliseconds(endDate.getMilliseconds() - ONE_DAY), true)].join(" - ");
     }
   }
 }
