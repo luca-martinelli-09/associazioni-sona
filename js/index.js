@@ -32,18 +32,23 @@ function mapJsonElement(generator, element) {
   return generated;
 }
 
+function padDate(number) {
+  if (number < 10) return " " + number;
+  return number;
+}
+
 function formatDate(dateString, isDate = false) {
   const months = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
 
   const date = isDate == false ? new Date(dateString) : dateString;
 
-  return [date.getDate().padStart(2, "0"), months[date.getMonth()], date.getFullYear()].join(" ");
+  return [padDate(date.getDate()), months[date.getMonth()], date.getFullYear()].join(" ");
 }
 
 function formatTime(dateString, isDate = false) {
   const date = isDate == false ? new Date(dateString) : dateString;
 
-  return [date.getHours().padStart(2, "0"), date.getMinutes().padStart(2, "0")].join(":");
+  return [padDate(date.getHours()), padDate(date.getMinutes())].join(":");
 }
 
 function formatDateTime(dateString, isDate = false) {
