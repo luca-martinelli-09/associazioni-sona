@@ -39,6 +39,7 @@ function createEventCard(evento) {
 
 function getImgFromAttachments(attachments) {
   attachments.forEach((attachment) => {
+    console.log(attachment.mimeType.indexOf("image"));
     if (attachment.mimeType.indexOf("image") == 0) {
       return "https://drive.google.com/uc?id=" + attachment.fileId;
     }
