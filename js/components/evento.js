@@ -1,12 +1,12 @@
 function createEventCard(evento) {
     const eventLocation = evento.location;
-    const eventLocationUrl = evento.location.url;
-    const startEventDate = evento.date;
-    const endEventDate = evento.date;
-    const eventTitle = evento.title;
+    const eventLocationUrl = "https://www.google.com/maps/search/" + encodeURIComponent(evento.location);
+    const startEventDate = evento.start.dateTime;
+    const endEventDate = evento.end.dateTime;
+    const eventTitle = evento.summary;
     const eventDescription = evento.description;
-    const eventUrl = evento.url;
-    const eventoImg = evento.imgUrl;
+    const eventUrl = evento.htmlLink;
+    const eventoImg = ""; // evento.imgUrl;
 
     return `<div class="card event">
                 <div class="card-image">

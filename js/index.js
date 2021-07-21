@@ -18,7 +18,7 @@ function mapJsonElement(generator, element) {
       generated[key] = val != null && val != "" ? val.replace(/\$[a-zA-Z0-9-_]+\$/g, function (match) {
         const elementKey = match.replace(/\$/g, "");
         if (generated.hasOwnProperty(elementKey)) {
-          return generated[elementKey];
+          return encodeUriComponent(generated[elementKey]);
         }
         return "";
       }) : null;

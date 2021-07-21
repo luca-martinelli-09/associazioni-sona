@@ -16,6 +16,11 @@ function listEvents(maxResults = null, timeMin = null, timeMax = null) {
       $("#eventi").empty();
 
       if (eventi.length > 0) {
+        eventi.forEach((evento) => {
+          const eventoElement = createEventCard(evento);
+
+          $("#eventi").append(eventoElement);
+        });
       } else {
         $("#eventi").append("<div class='message warning'>Sembra che non ci siano eventi programmati 😢</div>");
       }

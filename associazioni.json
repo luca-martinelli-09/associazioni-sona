@@ -22,7 +22,7 @@
     "contactTypes": {
         "location": {
             "name": "Sede",
-            "url": null,
+            "url": "https://www.google.com/maps/search/$address$",
             "icon": "map-pin",
             "iconColor": "#D54C4C",
             "iconClass": "feather icon-$icon$",
