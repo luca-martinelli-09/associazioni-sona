@@ -37,13 +37,13 @@ function formatDate(dateString, isDate = false) {
 
   const date = isDate == false ? new Date(dateString) : dateString;
 
-  return [date.getDate(), months[date.getMonth()], date.getFullYear()].join(" ");
+  return [date.getDate().padStart(2, "0"), months[date.getMonth()], date.getFullYear()].join(" ");
 }
 
 function formatTime(dateString, isDate = false) {
   const date = isDate == false ? new Date(dateString) : dateString;
 
-  return [date.getHours(), date.getMinutes()].join(":");
+  return [date.getHours().padStart(2, "0"), date.getMinutes().padStart(2, "0")].join(":");
 }
 
 function formatDateTime(dateString, isDate = false) {
