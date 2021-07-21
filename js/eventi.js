@@ -27,5 +27,3 @@ function listEvents(maxResults = null, timeMin = null, timeMax = null) {
     },
   });
 }
-
-listEvents(4, new Date().toISOString());
