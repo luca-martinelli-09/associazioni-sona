@@ -594,6 +594,10 @@ video {
   margin: 0px;
 }
 
+.m-3{
+  margin: 0.75rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -628,6 +632,14 @@ video {
 
 .table{
   display: table;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 @-webkit-keyframes spin{
@@ -696,12 +708,30 @@ video {
   }
 }
 
+.animate-spin{
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgba(51, 51, 51, var(--tw-text-opacity));
+}
+
+.opacity-25{
+  opacity: 0.25;
+}
+
+.opacity-75{
+  opacity: 0.75;
 }
 
 *, ::before, ::after{
