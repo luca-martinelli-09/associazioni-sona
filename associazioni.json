@@ -46,7 +46,7 @@
             "action": false
         },
         "email": {
-            "name": "Info",
+            "name": "Email",
             "url": "mailto:$address$",
             "icon": "mail",
             "iconColor": "#FF7600",
@@ -141,6 +141,7 @@
             "id": "evento-tra-i-salici",
             "name": "(E)vento tra i salici",
             "logoUrl": "https://eventotraisalici.files.wordpress.com/2016/02/immagine-profilo.jpg?w=600",
+            "cutRoundLogo": true,
             "description": "L’Associazione (E)Vento tra i salici nasce dallo spirito di aggregazione di alcuni ragazzi della provincia di Verona, intenzionati a dare una voce concreta alla creatività giovanile grazie alla promozione ed organizzazione di eventi culturali.",
             "president": "Beatrice Zoccatelli",
             "tags": [
@@ -184,6 +185,7 @@
             "id": "corpo-bandistico-sona",
             "name": "Corpo Bandistico di Sona",
             "logoUrl": "https://www.bandadisona.it/style/res/logo.svg",
+            "cutRoundLogo": false,
             "description": "Il Corpo Bandistico di Sona è un'orchestra a fiati da più di 60 elementi. Nel suo repertorio, propone brani scelti tra generi e tradizioni diverse, ricercando soprattutto musiche che valorizzino tutti gli strumenti ed i timbri della banda.",
             "president": "Doriano Benedetti",
             "tags": [

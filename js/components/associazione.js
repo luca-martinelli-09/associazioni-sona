@@ -14,10 +14,12 @@ function createAssociazioneCard(associazione) {
     assTags += `<span class="tag">${tagName}</span>`;
   });
 
+  const classImage = associazione.cutRoundLogo == true ? "class='rounded-full'" : "";
+
   return `<a class="card associazione" href="${assUrl}"
                 style="--s-color: ${sColorGradient};--e-color: ${eColorGradient};">
                 <div class="card-image">
-                    <img src="${imgUrl}" alt="${assName}" />
+                    <img src="${imgUrl}" alt="${assName}" ${classImage} />
                 </div>
                 <div class="card-content">
                     <div class="tags-container">${assTags}</div>
@@ -66,9 +68,11 @@ function createAssociazioneFullCard(associazione) {
   assActionsElement = assActions != "" ? `<div class="btn-group mt-10">${assActions}</div>` : "";
   assAttachmentsElement = assAttachments != "" ? `<h3 class="mt-6">Allegati</h3><div class="list-information">${assAttachments}</div>` : "";
 
+  const classImage = associazione.cutRoundLogo == true ? "class='rounded-full'" : "";
+
   return `<div class="card associazione-big">
               <div class="card-image">
-                  <img src="${imgUrl}" alt="${assName}" />
+                  <img src="${imgUrl}" alt="${assName}" ${classImage} />
               </div>
               <div class="card-content">
                   <h2>${assName}</h2>
