@@ -188,6 +188,23 @@ input[type="reset"]:active {
   color: #d54c4c;
 }
 
+.message {
+  @apply border border-black px-5 py-2;
+  border-radius: 3px;
+}
+
+.message.error {
+  @apply bg-red-300;
+}
+
+.message.warning {
+  @apply bg-yellow-300;
+}
+
+.message.success {
+  @apply bg-green-300;
+}
+
 /* HEADER */
 
 header {

@@ -10,7 +10,16 @@ function listEvents(maxResults = null, timeMin = null, timeMax = null) {
     url: "https://www.googleapis.com/calendar/v3/calendars/" + calendarId + "/events",
     data: $.param({ key: apiKey, ...maxResultsParam, ...timeMaxParam, ...timeMinParam }),
     type: "GET",
-    success: function (data) {},
+    success: function (data) {
+      const eventi = data.items;
+
+      $("#eventi").empty();
+
+      if (eventi.length > 0) {
+      } else {
+        $("#eventi").append("<div class='message warning'>Sembra che non ci siano eventi programmati 😢</div>");
+      }
+    },
   });
 }
 
