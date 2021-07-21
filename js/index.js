@@ -75,7 +75,8 @@ function formatDateRange(startDate, endDate, withTime = true) {
 }
 
 function stripTags(string) {
-  string.replace(/<[^>]*>?/gm, "");
+  stripped = string.replace(/<[^>]*>?/gm, "");
+  return stripped;
 }
 
 $(".menu-toggle").click(function (e) {
