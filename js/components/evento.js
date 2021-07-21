@@ -5,8 +5,12 @@ function createEventCard(evento) {
   const endEventDate = evento.end.dateTime != undefined ? new Date(evento.end.dateTime) : new Date(evento.end.date);
   const isDateTime = evento.end.dateTime != undefined;
   const eventTitle = evento.summary;
-  const eventDescription = evento.description;
+  var eventDescription = evento.description;
   const eventUrl = evento.htmlLink;
+
+  if(eventDescription.length > 300) {
+    eventDescription = eventDescription.substring(0, 300) + "...";
+  }
 
   const dateElement = formatDateRange(startEventDate, endEventDate, isDateTime);
 
