@@ -112,6 +112,7 @@ input[type="reset"].disabled {
   @apply bg-gray-50 text-gray-500;
   box-shadow: none !important;
   transform: none !important;
+  cursor: no-drop;
 }
 
 button.btn-mini,

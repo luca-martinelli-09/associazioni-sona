@@ -887,6 +887,7 @@ input[type="submit"].disabled,
 input[type="reset"].disabled{
   box-shadow: none !important;
   transform: none !important;
+  cursor: no-drop;
 }
 
 button.btn-mini, .button.btn-mini, input[type="button"].btn-mini, input[type="submit"].btn-mini, input[type="reset"].btn-mini{
