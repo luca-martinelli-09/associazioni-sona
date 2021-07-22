@@ -234,6 +234,57 @@
                 }
             ]
         },
+        "asd-sona-calcio": {
+            "id": "asd-sona-calcio",
+            "name": "A.S.D. Sona Calcio",
+            "logoUrl": "https://associazionisona.netlify.app/res/loghi/sonacalcio.jpg",
+            "cutRoundLogo": false,
+            "description": "Associazione Calcistica Dilettantistica di Sona.",
+            "president": "Paolo Pradella",
+            "tags": [
+                "sport",
+                "calcio"
+            ],
+            "mainColor": "#f5100e",
+            "sGradient": "#fff1f1",
+            "eGradient": "#ffe8e8",
+            "contacts": [
+                {
+                    "type": "location",
+                    "address": "Via Casella, 22 - 37060 Sona (VR)"
+                },
+                {
+                    "type": "website",
+                    "url": "https://sonacalcio.com/"
+                },
+                {
+                    "type": "email",
+                    "address": "asdsonacalcio@gmail.com",
+                    "action": true
+                },
+                {
+                    "type": "email",
+                    "address": "ufficiostampa@sonacalcio.com"
+                },
+                {
+                    "type": "phone",
+                    "number": "3928766096",
+                    "action": true
+                },
+                {
+                    "type": "social",
+                    "platform": "facebook",
+                    "profile": "aclugagnano"
+                },
+                {
+                    "type": "social",
+                    "platform": "whatsapp",
+                    "name": "Segreteria",
+                    "number": "3401166364",
+                    "info": "Lunedì, Mercoledì e Venerdì dalle 17:00 alle 19:30"
+                }
+            ]
+        },
         "corpo-bandistico-sona": {
             "id": "corpo-bandistico-sona",
             "name": "Corpo Bandistico di Sona",
