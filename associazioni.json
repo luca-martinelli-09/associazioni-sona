@@ -238,7 +238,7 @@
             "id": "asd-sona-calcio",
             "name": "A.S.D. Sona Calcio",
             "logoUrl": "https://associazionisona.netlify.app/res/loghi/sonacalcio.png",
-            "cutRoundLogo": false,
+            "cutRoundLogo": true,
             "description": "Associazione Calcistica Dilettantistica di Sona.",
             "president": "Paolo Pradella",
             "tags": [
