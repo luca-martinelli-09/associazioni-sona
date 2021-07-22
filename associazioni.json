@@ -192,9 +192,9 @@
                 "sport",
                 "calcio"
             ],
-            "mainColor": "#4f1f5d",
-            "sGradient": "#fdf4ff",
-            "eGradient": "#f9e6ff",
+            "mainColor": "#2a5192",
+            "sGradient": "#f3f7ff",
+            "eGradient": "#dfebff",
             "contacts": [
                 {
                     "type": "location",
