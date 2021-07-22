@@ -70,6 +70,10 @@ function createAssociazioneFullCard(associazione) {
 
   const classImage = associazione.cutRoundLogo == true ? "class='rounded-full'" : "";
 
+  const presidenteElement = presidentName != null ? `<p class="mt-3"><strong>Presidente</strong>: ${presidentName}</p>` : "";
+  const partitaIvaElement = associazione.partitaIva != null ? `<p class="mt-3"><strong>Partita IVA</strong>: ${associazione.partitaIva}</p>` : "";
+  const codiceFiscaleElement = associazione.codiceFiscale != null ? `<p class="mt-3"><strong>C.F.</strong>: ${associazione.codiceFiscale}</p>` : "";
+
   return `<div class="card associazione-big">
               <div class="card-image">
                   <img src="${imgUrl}" alt="${assName}" ${classImage} />
@@ -77,7 +81,9 @@ function createAssociazioneFullCard(associazione) {
               <div class="card-content">
                   <h2>${assName}</h2>
                   <p>${assDescription}</p>
-                  <p class="mt-3"><strong>Presidente</strong>: ${presidentName}</p>
+                  ${presidenteElement}
+                  ${partitaIvaElement}
+                  ${codiceFiscaleElement}
                   <div class="tags-container mt-3">${assTags}</div>
                   ${assAttachmentsElement}
                   ${assContactsElement}

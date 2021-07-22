@@ -144,6 +144,8 @@
             "cutRoundLogo": true,
             "description": "L’Associazione (E)Vento tra i salici nasce dallo spirito di aggregazione di alcuni ragazzi della provincia di Verona, intenzionati a dare una voce concreta alla creatività giovanile grazie alla promozione ed organizzazione di eventi culturali.",
             "president": "Beatrice Zoccatelli",
+            "partitaIva": null,
+            "codiceFiscale": null,
             "tags": [
                 "cultura",
                 "eventi"
@@ -188,6 +190,8 @@
             "cutRoundLogo": true,
             "description": "Associazione Calcistica di Lugagnano, nata dalla fusione di A.C. Lugagnano e Real Lugagnano.",
             "president": "Giovanni Forlin, Sergio Coati",
+            "partitaIva": "04648910232",
+            "codiceFiscale": null,
             "tags": [
                 "sport",
                 "calcio"
@@ -241,6 +245,8 @@
             "cutRoundLogo": true,
             "description": "Associazione Calcistica Dilettantistica di Sona.",
             "president": "Paolo Pradella",
+            "partitaIva": "04499600239",
+            "codiceFiscale": null,
             "tags": [
                 "sport",
                 "calcio"
@@ -297,6 +303,8 @@
             "cutRoundLogo": false,
             "description": "Il Corpo Bandistico di Sona è un'orchestra a fiati da più di 60 elementi. Nel suo repertorio, propone brani scelti tra generi e tradizioni diverse, ricercando soprattutto musiche che valorizzino tutti gli strumenti ed i timbri della banda.",
             "president": "Doriano Benedetti",
+            "partitaIva": null,
+            "codiceFiscale": "80026720237",
             "tags": [
                 "cultura", "musica", "educazione"
             ],
