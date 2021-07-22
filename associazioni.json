@@ -181,6 +181,59 @@
                 }
             ]
         },
+        "uc-lugagnano": {
+            "id": "uc-lugagnano",
+            "name": "U.C. Lugagnano",
+            "logoUrl": "https://associazionisona.netlify.app/res/loghi/uclugagnano.jpg",
+            "cutRoundLogo": true,
+            "description": "Associazione Calcistica di Lugagnano, nata dalla fusione di A.C. Lugagnano e Real Lugagnano.",
+            "president": "Giovanni Forlin, Sergio Coati",
+            "tags": [
+                "sport",
+                "calcio"
+            ],
+            "mainColor": "#4f1f5d",
+            "sGradient": "#fdf4ff",
+            "eGradient": "#f9e6ff",
+            "contacts": [
+                {
+                    "type": "location",
+                    "name": "Segreteria",
+                    "address": "Via Barlottini - 37060 Lugagnano (VR)",
+                    "info": "Lunedì, Mercoledì e Venerdì dalle 17:00 alle 19:00"
+                },
+                {
+                    "type": "location",
+                    "name": "Magazzino",
+                    "address": "Via Barlottini - 37060 Lugagnano (VR)",
+                    "info": "Lunedì, Mercoledì e Venerdì dalle 18:00 alle 19:30"
+                },
+                {
+                    "type": "website",
+                    "url": "http://uclugagnano.it/"
+                },
+                {
+                    "type": "email",
+                    "address": "info@uclugagnano.it",
+                    "action": true
+                },
+                {
+                    "type": "phone",
+                    "number": "045984071",
+                    "action": true
+                },
+                {
+                    "type": "phone",
+                    "name": "Cellulare",
+                    "number": "3200273847"
+                },
+                {
+                    "type": "social",
+                    "platform": "facebook",
+                    "profile": "aclugagnano"
+                }
+            ]
+        },
         "corpo-bandistico-sona": {
             "id": "corpo-bandistico-sona",
             "name": "Corpo Bandistico di Sona",
